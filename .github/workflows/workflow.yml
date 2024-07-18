@@ -40,5 +40,5 @@ jobs:
             memory: 1
             registry-username: ${{ secrets.AZURE_USERNAME }}
             registry-password: ${{ secrets.AZURE_PASSWORD }}
-            name: helloworlddev
+            name: helloworlddevpoc
             location: 'East US'
