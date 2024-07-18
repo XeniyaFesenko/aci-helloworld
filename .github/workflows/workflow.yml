@@ -41,4 +41,4 @@ jobs:
             registry-username: ${{ secrets.AZURE_USERNAME }}
             registry-password: ${{ secrets.AZURE_PASSWORD }}
             name: helloworlddev
-            location: 'central india'
+            location: 'East US'
