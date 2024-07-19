@@ -31,11 +31,11 @@ jobs:
           uses: 'azure/aci-deploy@v1'
           with:
             resource-group: poc
-            dns-name-label: helloworlddevtest
+            dns-name-label: hello-world
             image: demo101.azurecr.io/hello-world:${{ github.sha }}
             cpu: 1
             memory: 1
             registry-username: ${{ secrets.AZURE_USERNAME }}
             registry-password: ${{ secrets.AZURE_PASSWORD }}
-            name: aci-teqtox7x5n6rf329v677acmi6
+            name: ACI-Test
             location: 'East US'
