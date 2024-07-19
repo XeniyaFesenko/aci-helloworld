@@ -19,20 +19,20 @@ jobs:
         - name: 'Build & Push'
           uses: azure/docker-login@v1
           with:
-            login-server: registry101.azurecr.io
+            login-server: demo101.azurecr.io
             username: ${{ secrets.AZURE_USERNAME }}
             password: ${{ secrets.AZURE_PASSWORD }}
         - run: |
             docker build . -t hello-world:${{ github.sha }}
-            docker tag hello-world:${{ github.sha }} registry101.azurecr.io/hello-world:${{ github.sha }}
-            docker push registry101.azurecr.io/hello-world:${{ github.sha }}
+            docker tag hello-world:${{ github.sha }} demo101.azurecr.io/hello-world:${{ github.sha }}
+            docker push demo101.azurecr.io/hello-world:${{ github.sha }}
 
         - name: 'Deploy to Azure Container Instances'
           uses: 'azure/aci-deploy@v1'
           with:
-            resource-group: rg-topical-mole
+            resource-group: poc
             dns-name-label: helloworlddevtest
-            image: registry101.azurecr.io/hello-world:${{ github.sha }}
+            image: demo101.azurecr.io/hello-world:${{ github.sha }}
             cpu: 1
             memory: 1
             registry-username: ${{ secrets.AZURE_USERNAME }}
