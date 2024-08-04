@@ -20,11 +20,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
    
-    - name: ACR Login
-      run: |
-          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
-          az account set -s $ARM_SUBSCRIPTION_ID
-          az acr login -n xeniya001
+    - name: 'Login to Azure'
+      uses: azure/login@v1
+      with:
+         creds: ${{ secrets.AZURE_CREDENTIALS }}
  
     - name: Build the Docker image
       run: docker build -t xeniya001.azurecr.io/hello-world -t xeniya001.azurecr.io/hello-world:latest .
@@ -38,11 +37,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
  
-    - name: AZ CLI Setup
-      run: |
-          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
-          az account set -s $ARM_SUBSCRIPTION_ID
-          az acr login -n xeniya001
+    - name: 'Login to Azure'
+      uses: azure/login@v1
+      with:
+         creds: ${{ secrets.AZURE_CREDENTIALS }}
  
     - name: 'Deploy to Azure Container Instances'
       uses: 'azure/aci-deploy@v1'
