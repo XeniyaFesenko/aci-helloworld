@@ -24,12 +24,12 @@ jobs:
       uses: azure/login@v1
       with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
- 
+         
     - name: Build the Docker image
-      run: docker build -t xeniya001.azurecr.io/hello-world -t xeniya001.azurecr.io/hello-world:latest 
-   
-    - name: Push the Docker image
-      run: docker push -a xeniya001.azurecr.io/hello-world:latest
+    - run: |
+           docker build . -t hello-world:${{ github.sha }}
+           docker tag hello-world:${{ github.sha }} xeniya001.azurecr.io/hello-world:${{ github.sha }}
+           docker push xeniya001.azurecr.io/hello-world:${{ github.sha }}
  
   deploy:
     runs-on: ubuntu-latest
