@@ -1,41 +1,60 @@
+name: Docker Image Build
+ 
 on:
   push:
     branches:
-      - master
-name: Build & Deploy to ACI
+      - xeniya
+  workflow_dispatch:
+ 
+
+env:
+  ARM_CLIENT_ID: ${{ vars.ARM_CLIENT_ID }}
+  ARM_TENANT_ID: ${{ vars.ARM_TENANT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
+  ACR_PASSWORD: ${{ secrets.ACR_PASSWORD_XF }}
+ 
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
-        steps:
-
-        - name: 'Checkout GitHub Action'
-          uses: actions/checkout@master
-          
-        - name: 'Login to Azure'
-          uses: azure/login@v1
-          with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-        
-        - name: 'Build & Push'
-          uses: azure/docker-login@v1
-          with:
-            login-server: demo101.azurecr.io
-            username: ${{ secrets.AZURE_USERNAME }}
-            password: ${{ secrets.AZURE_PASSWORD }}
-        - run: |
-            docker build . -t hello-world:${{ github.sha }}
-            docker tag hello-world:${{ github.sha }} demo101.azurecr.io/hello-world:${{ github.sha }}
-            docker push demo101.azurecr.io/hello-world:${{ github.sha }}
-
-        - name: 'Deploy to Azure Container Instances'
-          uses: 'azure/aci-deploy@v1'
-          with:
-            resource-group: poc
-            dns-name-label: hello-world
-            image: demo101.azurecr.io/hello-world:${{ github.sha }}
-            cpu: 1
-            memory: 1
-            registry-username: ${{ secrets.AZURE_USERNAME }}
-            registry-password: ${{ secrets.AZURE_PASSWORD }}
-            name: aci-test
-            location: 'East US'
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+   
+    - name: ACR Login
+      run: |
+         # az cloud set --name AzureUSGovernment
+          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+          az account set -s $ARM_SUBSCRIPTION_ID
+          az acr login -n xeniya001
+ 
+    - name: Build the Docker image
+      run: docker build -t xeniya001.azurecr.io/hello-world -t xeniya001.azurecr.io/hello-world:latest .
+   
+    - name: Push the Docker image
+      run: docker push -a xeniya001.azurecr.io/hello-world:latest
+ 
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v4
+ 
+    - name: AZ CLI Setup
+      run: |
+         # az cloud set --name AzureUSGovernment
+          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+          az account set -s $ARM_SUBSCRIPTION_ID
+          az acr login -n xeniya001
+ 
+    - name: 'Deploy to Azure Container Instances'
+      uses: 'azure/aci-deploy@v1'
+      with:
+        resource-group: EIS-DEVTEST-INT-EAST-SANDBOX-RG
+        image: xeniya001.azurecr.io/hello-world:latest
+        cpu: 2
+        memory: 1
+        registry-login-server:  ${{ vars.ACR_SERVER_XF }}
+        registry-username: ${{ vars.ACR_USERNAME_XF }}
+        registry-password: ${{ secrets.ACR_PASSWORD_XF }}
+        name: acigroup-aci-poc
+        location: 'us east'
