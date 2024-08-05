@@ -55,10 +55,10 @@ jobs:
         resource-group: EIS_DEVTEST-INT-EAST-SANDBOX-RG
         dns-name-label: hello-world
         image: xeniya001.azurecr.io/hello-world:latest
-        cpu: 2
+        cpu: 1
         memory: 1
         registry-login-server:  ${{ vars.ACR_SERVER_XF }}
         registry-username: ${{ vars.ACR_USERNAME_XF }}
         registry-password: ${{ secrets.ACR_PASSWORD_XF }}
-        name: acigroup-aci-poc
+        name: aci-aci-poc
         location: 'East US'
