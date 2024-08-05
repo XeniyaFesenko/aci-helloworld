@@ -54,7 +54,7 @@ jobs:
       with:
         resource-group: EIS_DEVTEST-INT-EAST-SANDBOX-RG
         dns-name-label: hello-world
-        image: xeniya001.azurecr.io/hello-world:latest
+        image: xeniya001.azurecr.io/hello-world:${{ github.sha }}
         cpu: 1
         memory: 1
         registry-login-server:  ${{ vars.ACR_SERVER_XF }}
