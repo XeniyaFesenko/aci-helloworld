@@ -13,6 +13,7 @@ env:
   ARM_CLIENT_SECRET: ${{ vars.ARM_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
   ACR_PASSWORD: ${{ secrets.ACR_PASSWORD_XF }}
+  ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
  
 jobs:
   build:
@@ -29,7 +30,7 @@ jobs:
       uses: azure/docker-login@v1
       with:
         login-server: demo101.azurecr.io
-        username: ${{ secrets.ACR_USERNAME_XF }}
+        username: ${{ vars.ACR_USERNAME_XF }}
         password: ${{ secrets.ACR_PASSWORD_XF }}
     - run: |
         docker build . -t hello-world:${{ github.sha }}
