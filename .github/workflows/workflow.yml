@@ -26,10 +26,15 @@ jobs:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
          
     - name: Build the Docker image
+      uses: azure/docker-login@v1
+      with:
+        login-server: demo101.azurecr.io
+        username: ${{ secrets.ACR_USERNAME_XF }}
+        password: ${{ secrets.ACR_PASSWORD_XF }}
     - run: |
-           docker build . -t hello-world:${{ github.sha }}
-           docker tag hello-world:${{ github.sha }} xeniya001.azurecr.io/hello-world:${{ github.sha }}
-           docker push xeniya001.azurecr.io/hello-world:${{ github.sha }}
+        docker build . -t hello-world:${{ github.sha }}
+        docker tag hello-world:${{ github.sha }} xeniya001.azurecr.io/hello-world:${{ github.sha }}
+        docker push xeniya001.azurecr.io/hello-world:${{ github.sha }}
  
   deploy:
     runs-on: ubuntu-latest
@@ -41,6 +46,7 @@ jobs:
       uses: azure/login@v1
       with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
+         
  
     - name: 'Deploy to Azure Container Instances'
       uses: 'azure/aci-deploy@v1'
