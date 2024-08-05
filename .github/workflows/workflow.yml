@@ -61,4 +61,4 @@ jobs:
         registry-username: ${{ vars.ACR_USERNAME_XF }}
         registry-password: ${{ secrets.ACR_PASSWORD_XF }}
         name: acigroup-aci-poc
-        location: 'us east'
+        location: 'East US'
