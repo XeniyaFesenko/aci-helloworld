@@ -53,6 +53,7 @@ jobs:
       uses: 'azure/aci-deploy@v1'
       with:
         resource-group: EIS-DEVTEST-INT-EAST-SANDBOX-RG
+        dns-name-label: hello-world
         image: xeniya001.azurecr.io/hello-world:latest
         cpu: 2
         memory: 1
