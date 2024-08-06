@@ -23,7 +23,7 @@ jobs:
     
     - name: ACR Login
       run: |
-          echo  client secret is ${{ secrets.ARM_CLIENT_SECRET }}
+          echo  client secret is ${{ vars.ARM_CLIENT_SECRET }}
           az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
           az account set -s $ARM_SUBSCRIPTION_ID
           az acr login -n xeniya001
@@ -33,7 +33,7 @@ jobs:
       with:
             login-server: xeniya001.azurecr.us
             username: ${{ vars.ACR_USERNAME_XF }}
-            password: ${{ secrets.ACR_PASSWORD_XF }}
+            password: ${{ vars.ACR_PASSWORD_XF }}
     - run: |
             docker build . -t docker-documentconversion:${{ github.sha }}
             docker tag docker-documentconversion:${{ github.sha }}xeniya001.azurecr.io.azurecr.us/docker-documentconversion:${{ github.sha }}
@@ -62,6 +62,6 @@ jobs:
         memory: 1
         registry-login-server:  ${{ vars.ACR_SERVER_XF }}
         registry-username: ${{ vars.ACR_USERNAME_XF }}
-        registry-password: ${{ secrets.ACR_PASSWORD_XF }}
+        registry-password: ${{ vars.ACR_PASSWORD_XF }}
         name: acigroup-doc-conversion-aci-poc
         location: 'East US'
