@@ -1,0 +1,67 @@
+name: Docker Image Build
+
+on:
+  push:
+    branches: 
+      - xeniya
+  workflow_dispatch:
+
+
+env:
+  ARM_CLIENT_ID: ${{ vars.ARM_CLIENT_ID }}
+  ARM_TENANT_ID: ${{ vars.ARM_TENANT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
+  ACR_PASSWORD: ${{ secrets.ACR_PASSWORD_XF }}
+  ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: ACR Login
+      run: |
+          az cloud set --name AzureUSGovernment
+          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+          az account set -s $ARM_SUBSCRIPTION_ID
+          az acr login -n docconvertacrxeniyapoc
+
+    - name: Build the Docker image
+      uses: azure/docker-login@v1
+      with:
+            login-server: docconvertacrxeniyapoc.azurecr.us
+            username: ${{ vars.ACR_USERNAME_XF }}
+            password: ${{ secrets.ACR_PASSWORD_XF }}
+    - run: |
+            docker build . -t docker-documentconversion:${{ github.sha }}
+            docker tag docker-documentconversion:${{ github.sha }} docconvertacrxeniyapoc.azurecr.us/docker-documentconversion:${{ github.sha }}
+            docker push docconvertacrxeniyapoc.azurecr.us/docker-documentconversion:${{ github.sha }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: AZ CLI Setup
+      run: |
+          az cloud set --name AzureUSGovernment
+          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+          az account set -s $ARM_SUBSCRIPTION_ID
+          az acr login -n docconvertacrxeniyapoc
+
+    - name: 'Deploy to Azure Container Instances'
+      uses: 'azure/aci-deploy@v1'
+      with:
+        resource-group: EIS-DEVTEST-INT-EAST-SANDBOX-RG
+        dns-name-label: docker-documentconversion
+        image: docconvertacrxeniyapoc.azurecr.us/docker-documentconversion:${{ github.sha }}
+        cpu: 2
+        memory: 1
+        registry-login-server:  ${{ vars.ACR_SERVER_XF }}
+        registry-username: ${{ vars.ACR_USERNAME_XF }}
+        registry-password: ${{ secrets.ACR_PASSWORD_XF }}
+        name: acigroup-doc-conversion-aci-poc
+        location: 'usgovvirginia'
