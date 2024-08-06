@@ -12,7 +12,7 @@ env:
   ARM_TENANT_ID: ${{ vars.ARM_TENANT_ID }}
   ARM_CLIENT_SECRET: ${{ vars.ARM_CLIENT_SECRET }}
   ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
-  ACR_PASSWORD: ${{ vars.ACR_PASSWORD_XF }}
+  ACR_PASSWORD: ${{ secrets.ACR_PASSWORD_XF }}
   ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
 
 jobs:
@@ -33,7 +33,7 @@ jobs:
       with:
             login-server: xeniya001.azurecr.us
             username: ${{ vars.ACR_USERNAME_XF }}
-            password: ${{ vars.ACR_PASSWORD_XF }}
+            password: ${{ secrets.ACR_PASSWORD_XF }}
     - run: |
             docker build . -t docker-documentconversion:${{ github.sha }}
             docker tag docker-documentconversion:${{ github.sha }}xeniya001.azurecr.io.azurecr.us/docker-documentconversion:${{ github.sha }}
@@ -62,6 +62,6 @@ jobs:
         memory: 1
         registry-login-server:  ${{ vars.ACR_SERVER_XF }}
         registry-username: ${{ vars.ACR_USERNAME_XF }}
-        registry-password: ${{ vars.ACR_PASSWORD_XF }}
+        registry-password: ${{ secrets.ACR_PASSWORD_XF }}
         name: acigroup-doc-conversion-aci-poc
         location: 'East US'
