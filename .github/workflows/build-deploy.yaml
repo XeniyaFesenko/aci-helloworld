@@ -36,8 +36,8 @@ jobs:
             password: ${{ secrets.ACR_PASSWORD_XF }}
     - run: |
             docker build . -t docker-documentconversion:${{ github.sha }}
-            docker tag docker-documentconversion:${{ github.sha }} xeniya001.azurecr.io.azurecr.us/docker-documentconversion:${{ github.sha }}
-            docker push xeniya001.azurecr.io.azurecr.us/docker-documentconversion:${{ github.sha }}
+            docker tag docker-documentconversion:${{ github.sha }} xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
+            docker push xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
 
   deploy:
     runs-on: ubuntu-latest
@@ -57,7 +57,7 @@ jobs:
       with:
         resource-group: EIS_DEVTEST-INT-EAST-SANDBOX-RG
         dns-name-label: docker-documentconversion
-        image: xeniya001.azurecr.us/docker-documentconversion:${{ github.sha }}
+        image: xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
         cpu: 2
         memory: 1
         registry-login-server:  ${{ vars.ACR_SERVER_XF }}
