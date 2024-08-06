@@ -31,7 +31,7 @@ jobs:
     - name: Build the Docker image
       uses: azure/docker-login@v1
       with:
-            login-server: xeniya001.azurecr.us
+            login-server: xeniya001.azurecr.io
             username: ${{ vars.ACR_USERNAME_XF }}
             password: ${{ secrets.ACR_PASSWORD_XF }}
     - run: |
