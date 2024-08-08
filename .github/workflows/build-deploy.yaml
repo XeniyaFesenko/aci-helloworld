@@ -14,7 +14,7 @@ env:
   ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
   ACR_PASSWORD: ${{ secrets.ACR_PASSWORD_XF }}
   ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
-
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
