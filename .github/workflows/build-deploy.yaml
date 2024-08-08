@@ -39,17 +39,17 @@ jobs:
             docker tag docker-documentconversion:${{ github.sha }} xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
             docker push xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
 
-  # deploy:
-  #   runs-on: ubuntu-latest
-  #   needs: build
-  #   steps:
-  #   - uses: actions/checkout@v4
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - uses: actions/checkout@v4
 
-  #   - name: AZ CLI Setup
-  #     run: |
-  #         az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
-  #         az account set -s $ARM_SUBSCRIPTION_ID
-  #         az acr login -n xeniya001
+    - name: AZ CLI Setup
+      run: |
+          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+          az account set -s $ARM_SUBSCRIPTION_ID
+          az acr login -n xeniya001
 
     - name: 'Deploy to Azure Container Instances'
       uses: 'azure/aci-deploy@v1'
