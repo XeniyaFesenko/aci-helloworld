@@ -64,4 +64,5 @@ jobs:
         registry-password: ${{ secrets.ACR_PASSWORD_XF }}
         name: poc-private
         location: 'East US'
+        restart policy: Always
 
