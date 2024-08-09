@@ -51,21 +51,35 @@ jobs:
           az account set -s $ARM_SUBSCRIPTION_ID
           az acr login -n xeniya001
 
-    - name: 'Deploy to Azure Container Instances'
-      uses: 'azure/aci-deploy@v1'
-      with:
-        resource-group: EIS_DEVTEST-INT-EAST-SANDBOX-RG
-        subnet: ACI-Private
-        vnet: vnet
-        image: xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
-        cpu: 1
-        memory: 1.5
-        registry-login-server:  ${{ vars.ACR_SERVER_XF }}
-        registry-username: ${{ vars.ACR_USERNAME_XF }}
-        registry-password: ${{ secrets.ACR_PASSWORD_XF }}
-        ip-adress: Private
-        ports: 80
-        name: poc-aci
-        location: 'East US'
-        
+    # - name: 'Deploy to Azure Container Instances'
+    #   uses: 'azure/aci-deploy@v1'
+    #   with:
+    #     resource-group: EIS_DEVTEST-INT-EAST-SANDBOX-RG
+    #     subnet: ACI-Private
+    #     vnet: vnet
+    #     image: xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
+    #     cpu: 1
+    #     memory: 1.5
+    #     registry-login-server:  ${{ vars.ACR_SERVER_XF }}
+    #     registry-username: ${{ vars.ACR_USERNAME_XF }}
+    #     registry-password: ${{ secrets.ACR_PASSWORD_XF }}
+    #     ip-adress: Private
+    #     ports: 80
+    #     name: poc-aci
+    #     location: 'East US'
+    
+     - name: Deploy to Azure Container Instances with Private IP
+       run: |
+          az container create \
+          --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG \
+          --name poc-private \
+          --image xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }} \
+          --cpu 1 \
+          --memory 1.5 \
+          --registry-username ${{ vars.ACR_USERNAME_XF }} \
+          --registry-password ${{ secrets.ACR_PASSWORD_XF }} \
+          --vnet vnet \
+          --subnet ACI-Private \
+          --ip-address private \
+          --location eastus
 
