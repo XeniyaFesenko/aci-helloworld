@@ -68,8 +68,8 @@ jobs:
     #     name: poc-aci
     #     location: 'East US'
     
-     - name: Deploy to Azure Container Instances with Private IP
-       run: |
+    - name: Deploy to Azure Container Instances with Private IP
+      run: |
           az container create \
           --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG \
           --name poc-private \
