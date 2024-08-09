@@ -55,7 +55,8 @@ jobs:
       uses: 'azure/aci-deploy@v1'
       with:
         resource-group: EIS_DEVTEST-INT-EAST-SANDBOX-RG
-        dns-name-label: 10.0.10.4
+        subnet: ACI-Private
+        vnet: vnet
         image: xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
         cpu: 1
         memory: 1.5
