@@ -75,6 +75,7 @@ jobs:
           --name poc-private \
           --image xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }} \
           --cpu 1 \
+          --port 80\
           --memory 1.5 \
           --registry-username ${{ vars.ACR_USERNAME_XF }} \
           --registry-password ${{ secrets.ACR_PASSWORD_XF }} \
