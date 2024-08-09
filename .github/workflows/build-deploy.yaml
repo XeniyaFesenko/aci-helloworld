@@ -62,6 +62,6 @@ jobs:
         registry-login-server:  ${{ vars.ACR_SERVER_XF }}
         registry-username: ${{ vars.ACR_USERNAME_XF }}
         registry-password: ${{ secrets.ACR_PASSWORD_XF }}
-        name: acigroup-doc-conversion-aci-poc
+        name: poc-private
         location: 'East US'
-        subscription-id: ${{ vars.ARM_SUBSCRIPTION_ID }}
+
