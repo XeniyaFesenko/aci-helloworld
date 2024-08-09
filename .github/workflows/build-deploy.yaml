@@ -57,12 +57,12 @@ jobs:
         resource-group: EIS_DEVTEST-INT-EAST-SANDBOX-RG
         dns-name-label: docker-documentconversion
         image: xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
-        cpu: 2
-        memory: 1
+        cpu: 1
+        memory: 1.5
         registry-login-server:  ${{ vars.ACR_SERVER_XF }}
         registry-username: ${{ vars.ACR_USERNAME_XF }}
         registry-password: ${{ secrets.ACR_PASSWORD_XF }}
         name: poc-private
         location: 'East US'
-        restart policy: Always
+        restart policy: OnFailure
 
