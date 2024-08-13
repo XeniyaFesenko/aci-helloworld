@@ -69,6 +69,15 @@ jobs:
               --file instance.yaml
           working-directory: ./ContainerGroup
 
+        - name: Get IP adrress of ACI Instance 
+          run: | 
+           # Retrieve the ACI private IP address
+          ACI_PRIVATE_IP=$(az container show \
+            --resource-group EIS-DEVTEST-INT-SOUTHWEST-VEIS-RG \
+            --name <aci-name> \
+            --query "ipAddress.ip" \
+            --output tsv)
+            
         - name: Update API in Azure API Management
           run: |
             # If APIM is configured with VNet integration, it can resolve the private IP
