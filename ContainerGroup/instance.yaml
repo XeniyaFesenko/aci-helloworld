@@ -23,7 +23,7 @@ properties:
   imageRegistryCredentials: # Credentials to pull a private image
   - server: xeniya001.azurecr.io
     username: xeniya001
-    password: abcd
+    password: *****
   ipAddress:
     type: Private
     ports:
