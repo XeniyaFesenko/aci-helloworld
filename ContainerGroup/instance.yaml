@@ -1,0 +1,35 @@
+apiVersion: '2021-07-01'
+location: estus
+name: va-eis-doc-convert-aci-dev
+properties:
+  containers:
+  - name: va-eis-doc-convert-aci-dev
+    properties:
+      command:
+      environmentVariables: 
+      image: xeniya001.azurecr.io/docker-documentconversion:latest
+      ports:
+      - port: 80
+  #    - port: 443
+      resources:
+        requests:
+          cpu: 2.0
+          memoryInGB: 4.0
+  dnsConfig:
+    nameServers:
+    - 10.245.225.68 # DNS Server 1
+    - 10.245.225.69 # DNS Server 2
+    searchDomains: contoso.com # DNS search suffix
+  imageRegistryCredentials: # Credentials to pull a private image
+  - server: xeniya001.azurecr.io
+    username: xeniya001
+    password: BJtt7+kUkZShBUZfV38J0jhc464nuUNwrGLi2a4a1c+ACRBFxEPb
+  ipAddress:
+    type: Private
+    ports:
+      - port: 80
+ #     - port: 443
+  subnetIds:
+    - id: /subscriptions/96cb683f-4550-464a-8fcf-a7054553e9e6/resourceGroups/EIS_DEVTEST-INT-EAST-SANDBOX-RG/providers/Microsoft.Network/virtualNetworks/vnet/subnets/ACI-Private
+tags: null
+type: Microsoft.ContainerInstance/containerGroups

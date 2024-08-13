@@ -1,0 +1,82 @@
+name: Docker Image Build
+
+on:
+  push:
+    branches: 
+      - xeniya
+  workflow_dispatch:
+
+
+env:
+  ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+  ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+  ACR_PASSWORD: ${{ secrets.ACR_PASSWORD_XF }}
+  ACR_USERNAME: ${{ secrets.ACR_USERNAME_XF }}
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: ACR Login
+      run: |
+          az cloud set --name AzureUSGovernment
+          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+          az account set -s $ARM_SUBSCRIPTION_ID
+          az acr login -n vaeisdocconvertacrdev
+ 
+    - name: Build the Docker image
+      uses: azure/docker-login@v1
+      with:
+            login-server: xeniya001.azurecr.io
+            username: ${{ secrets.ACR_USERNAME_XF }}
+            password: ${{ secrets.ACR_PASSWORD_XF }}
+    - run: |
+            docker build -t xeniya001.azurecr.io/doc-convert -t xeniya001.azurecr.io/doc-convert:v1 .
+            docker push -a xeniya001.azurecr.io/doc-convert
+
+  deploy:
+     name: "Deploy Document-Conversion Container Instance"
+     runs-on: ubuntu-latest
+     needs: build
+     steps:
+                  
+        - uses: actions/checkout@v4
+                  
+        - name: Update instance.yaml
+          run : |
+            cd ./ContainerGroup
+            pwd
+            sed -i "s/abcde/$ACR_PASSWORD/g" instance.yaml
+            cat instance.yaml
+       #   working-directory: ./ContainerGroup
+                  
+        - name: AZ CLI Setup
+          run:  |
+                      az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+                      az account set -s $ARM_SUBSCRIPTION_ID
+                      az acr login -n vaeisdocconvertacrdev
+            
+        - name: Deploy Container Instance
+          run:  |
+            az container create \
+              --resource-group EIS-DEVTEST-INT-SOUTHWEST-DOC-CONVERT-RG \
+              --image xeniya001.azurecr.io/doc-convert:latest \
+              --registry-login-server xeniya001.azurecr.io \
+              --file instance.yaml
+          working-directory: ./ContainerGroup
+
+        - name: Update API in Azure API Management
+          run: |
+            # If APIM is configured with VNet integration, it can resolve the private IP
+            # Update the API in APIM to use the private IP of ACI
+            az apim api update \
+              --resource-group EIS-DEVTEST-INT-SOUTHWEST-VEIS-RG  \
+              --service-name va-eis-devtest-apim-sw \
+              --api-id my-api \
+              --path /my-api \
+              --service-url http://$ACI_PRIVATE_IP
+    

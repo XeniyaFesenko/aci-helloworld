@@ -57,3 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+.terraform
+*.terraform/.*
+*.terraform.tfstate
+terraform.tfstate
+.terraform.lock.hcl
+terraform.tfstate.backup
