@@ -48,13 +48,13 @@ jobs:
      needs: build
      steps:
                   
-        - uses: actions/checkout@v4
+        # - uses: actions/checkout@v4
                   
-        - name: Update instance.yaml
-          run : |
-            sed -i "s/pswd/${{ env.ACR_PASSWORD }}/g" instance.yaml
-            #cat instance.yaml
-          working-directory: ContainerGroup
+        # - name: Update instance.yaml
+        #   run : |
+        #     sed -i "s/pswd/${{ env.ACR_PASSWORD }}/g" instance.yaml
+        #     #cat instance.yaml
+        #   working-directory: ContainerGroup
                   
         #- name: ACR Login
         #  uses: azure/docker-login@v2
