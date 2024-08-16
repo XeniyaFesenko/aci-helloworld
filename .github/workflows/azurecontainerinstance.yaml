@@ -55,7 +55,7 @@ jobs:
           uses: azure/container-apps-deploy-action@v1
           with:
             appSourcePath: ${{ github.workspace }}
-            acrName: xeniya001
+            # acrName: xeniya001
             resourceGroup: EIS_DEVTEST-INT-EAST-SANDBOX-RG  
             containerAppName: poc-container-app
             registryUrl: xeniya001.azurecr.io
