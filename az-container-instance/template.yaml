@@ -1,5 +1,5 @@
 properties:
-  managedEnvironmentId: /subscriptions/${{ vars.ARM_SUBSCRIPTION_ID }}/resourceGroups/EIS_DEVTEST-INT-EAST-SANDBOX-RG/providers/Microsoft.App/managedEnvironments/EISDEVTEST
+  managedEnvironmentId: /subscriptions/SUBSCRIPTION_ID_PLACEHOLDER/resourceGroups/RG_PLACEHOLDER/providers/Microsoft.App/managedEnvironments/EISDEVTEST
   configuration:
     ingress:
       external: true
@@ -7,5 +7,5 @@ properties:
       targetPort: 80
   template:
     containers:
-      - image: docker-documentconversion:${{ github.sha }}
+      - image: docker-documentconversion:GITHUB_SHA_PLACEHOLDER
         name: test-container-app

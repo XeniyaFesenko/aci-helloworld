@@ -80,6 +80,12 @@ jobs:
           ls -l 
           pwd           
   
+      - name: Replace placeholders in template.yaml
+        run: |
+          sed -i 's/SUBSCRIPTION_ID_PLACEHOLDER/${{ vars.ARM_SUBSCRIPTION_ID }}/g' ./az-container-instance/template.yaml
+          sed -i 's/RG_PLACEHOLDER/${{ vars.AZ_RESOURCE_GROUP }}/g' ./az-container-instance/template.yaml
+          sed -i 's/GITHUB_SHA_PLACEHOLDER/${{ github.sha }}/g' ./az-container-instance/template.yaml
+          
       - name: Build and Deploy Container App
         uses: azure/container-apps-deploy-action@v1
         with:
