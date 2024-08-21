@@ -1,5 +1,5 @@
 properties:
-  managedEnvironmentId: /subscriptions/${{ vars.ARM_SUBSCRIPTION_ID }}/resourceGroups/EIS_DEVTEST-INT-EAST-SANDBOX-RG/providers/Microsoft.App/managedEnvironments/CONTAINER_APP_ENVIRONMENT
+  managedEnvironmentId: /subscriptions/${{ vars.ARM_SUBSCRIPTION_ID }}/resourceGroups/EIS_DEVTEST-INT-EAST-SANDBOX-RG/providers/Microsoft.App/managedEnvironments/EISDEVTEST
   configuration:
     ingress:
       external: true
