@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Extensions.Configuration.Abstractions.8.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationDebugViewContext">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationDebugViewContext</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationDebugViewContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationDebugViewContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationDebugViewContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationDebugViewContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationDebugViewContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.AddOf1IConfigurationBuilderActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Action{``0},Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+            <summary>Sets the Shim of ConfigurationExtensions.Add(IConfigurationBuilder builder, Action`1 configureSource)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.AsEnumerableIConfiguration">
+            <summary>Sets the Shim of ConfigurationExtensions.AsEnumerable(IConfiguration configuration)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.AsEnumerableIConfigurationBoolean">
+            <summary>Sets the Shim of ConfigurationExtensions.AsEnumerable(IConfiguration configuration, Boolean makePathsRelative)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.ExistsIConfigurationSection">
+            <summary>Sets the Shim of ConfigurationExtensions.Exists(IConfigurationSection section)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.GetConnectionStringIConfigurationString">
+            <summary>Sets the Shim of ConfigurationExtensions.GetConnectionString(IConfiguration configuration, String name)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationExtensions.GetRequiredSectionIConfigurationString">
+            <summary>Sets the Shim of ConfigurationExtensions.GetRequiredSection(IConfiguration configuration, String key)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationKeyNameAttribute</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.#ctor(Microsoft.Extensions.Configuration.ConfigurationKeyNameAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.AllInstances.NameGet">
+            <summary>Sets the Shim of ConfigurationKeyNameAttribute.get_Name(ConfigurationKeyNameAttribute this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.ConstructorString">
+            <summary>Sets the Shim of ConfigurationKeyNameAttribute.ConfigurationKeyNameAttribute(ConfigurationKeyNameAttribute this, String name)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyNameAttribute.NameGet">
+            <summary>Sets the Shim of ConfigurationKeyNameAttribute.get_Name(ConfigurationKeyNameAttribute this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationPath</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.CombineIEnumerableOfString">
+            <summary>Sets the Shim of ConfigurationPath.Combine(IEnumerable`1 pathSegments)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.CombineStringArray">
+            <summary>Sets the Shim of ConfigurationPath.Combine(String[] pathSegments)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.GetParentPathString">
+            <summary>Sets the Shim of ConfigurationPath.GetParentPath(String path)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.GetSectionKeyString">
+            <summary>Sets the Shim of ConfigurationPath.GetSectionKey(String path)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationPath.StaticConstructor">
+            <summary>Sets the Shim of ConfigurationPath.ConfigurationPath()</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationRootExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions.GetDebugViewIConfigurationRoot">
+            <summary>Sets the Shim of ConfigurationRootExtensions.GetDebugView(IConfigurationRoot root)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions.GetDebugViewIConfigurationRootFuncOfConfigurationDebugViewContextString">
+            <summary>Sets the Shim of ConfigurationRootExtensions.GetDebugView(IConfigurationRoot root, Func`2 processValue)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRootExtensions.GetValueAndProviderIConfigurationRootString">
+            <summary>Sets the Shim of ConfigurationRootExtensions.GetValueAndProvider(IConfigurationRoot root, String key)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration">
+            <summary>Stub type of Microsoft.Extensions.Configuration.IConfiguration</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.#ctor">
+            <summary>Initializes a new instance of type StubIConfiguration</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.GetChildren">
+            <summary>Sets the stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.GetReloadToken">
+            <summary>Sets the stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.GetSectionString">
+            <summary>Sets the stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.Microsoft#Extensions#Configuration#IConfiguration#Item(System.String)">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.ItemGetString">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.ItemSetStringString">
+            <summary>Sets the stub of IConfiguration.set_Item(IConfiguration this, String key, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.Microsoft#Extensions#Configuration#IConfiguration#GetChildren">
+            <summary>Sets the Stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.Microsoft#Extensions#Configuration#IConfiguration#GetReloadToken">
+            <summary>Sets the Stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfiguration.Microsoft#Extensions#Configuration#IConfiguration#GetSection(System.String)">
+            <summary>Sets the Stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder">
+            <summary>Stub type of Microsoft.Extensions.Configuration.IConfigurationBuilder</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.#ctor">
+            <summary>Initializes a new instance of type StubIConfigurationBuilder</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.AddIConfigurationSource">
+            <summary>Sets the stub of IConfigurationBuilder.Add(IConfigurationBuilder this, IConfigurationSource source)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.Build">
+            <summary>Sets the stub of IConfigurationBuilder.Build(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.Microsoft#Extensions#Configuration#IConfigurationBuilder#Add(Microsoft.Extensions.Configuration.IConfigurationSource)">
+            <summary>Sets the Stub of IConfigurationBuilder.Add(IConfigurationBuilder this, IConfigurationSource source)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.Microsoft#Extensions#Configuration#IConfigurationBuilder#Build">
+            <summary>Sets the Stub of IConfigurationBuilder.Build(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.Microsoft#Extensions#Configuration#IConfigurationBuilder#Properties">
+            <summary>Sets the stub of IConfigurationBuilder.get_Properties(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.PropertiesGet">
+            <summary>Sets the stub of IConfigurationBuilder.get_Properties(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.Microsoft#Extensions#Configuration#IConfigurationBuilder#Sources">
+            <summary>Sets the stub of IConfigurationBuilder.get_Sources(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationBuilder.SourcesGet">
+            <summary>Sets the stub of IConfigurationBuilder.get_Sources(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager">
+            <summary>Stub type of Microsoft.Extensions.Configuration.IConfigurationManager</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.#ctor">
+            <summary>Initializes a new instance of type StubIConfigurationManager</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.AddIConfigurationSource">
+            <summary>Sets the stub of IConfigurationBuilder.Add(IConfigurationBuilder this, IConfigurationSource source)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Build">
+            <summary>Sets the stub of IConfigurationBuilder.Build(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.GetChildren">
+            <summary>Sets the stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.GetReloadToken">
+            <summary>Sets the stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.GetSectionString">
+            <summary>Sets the stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfiguration#Item(System.String)">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.ItemGetString">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.ItemSetStringString">
+            <summary>Sets the stub of IConfiguration.set_Item(IConfiguration this, String key, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfiguration#GetChildren">
+            <summary>Sets the Stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfiguration#GetReloadToken">
+            <summary>Sets the Stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfiguration#GetSection(System.String)">
+            <summary>Sets the Stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfigurationBuilder#Add(Microsoft.Extensions.Configuration.IConfigurationSource)">
+            <summary>Sets the Stub of IConfigurationBuilder.Add(IConfigurationBuilder this, IConfigurationSource source)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfigurationBuilder#Build">
+            <summary>Sets the Stub of IConfigurationBuilder.Build(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfigurationBuilder#Properties">
+            <summary>Sets the stub of IConfigurationBuilder.get_Properties(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.PropertiesGet">
+            <summary>Sets the stub of IConfigurationBuilder.get_Properties(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.Microsoft#Extensions#Configuration#IConfigurationBuilder#Sources">
+            <summary>Sets the stub of IConfigurationBuilder.get_Sources(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationManager.SourcesGet">
+            <summary>Sets the stub of IConfigurationBuilder.get_Sources(IConfigurationBuilder this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider">
+            <summary>Stub type of Microsoft.Extensions.Configuration.IConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.#ctor">
+            <summary>Initializes a new instance of type StubIConfigurationProvider</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the stub of IConfigurationProvider.GetChildKeys(IConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.GetReloadToken">
+            <summary>Sets the stub of IConfigurationProvider.GetReloadToken(IConfigurationProvider this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.Load">
+            <summary>Sets the stub of IConfigurationProvider.Load(IConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.Microsoft#Extensions#Configuration#IConfigurationProvider#GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>Sets the Stub of IConfigurationProvider.GetChildKeys(IConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.Microsoft#Extensions#Configuration#IConfigurationProvider#GetReloadToken">
+            <summary>Sets the Stub of IConfigurationProvider.GetReloadToken(IConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.Microsoft#Extensions#Configuration#IConfigurationProvider#Load">
+            <summary>Sets the Stub of IConfigurationProvider.Load(IConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.Microsoft#Extensions#Configuration#IConfigurationProvider#Set(System.String,System.String)">
+            <summary>Sets the Stub of IConfigurationProvider.Set(IConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.Microsoft#Extensions#Configuration#IConfigurationProvider#TryGet(System.String,System.String@)">
+            <summary>Sets the Stub of IConfigurationProvider.TryGet(IConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.SetStringString">
+            <summary>Sets the stub of IConfigurationProvider.Set(IConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationProvider.TryGetStringStringOut">
+            <summary>Sets the stub of IConfigurationProvider.TryGet(IConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot">
+            <summary>Stub type of Microsoft.Extensions.Configuration.IConfigurationRoot</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.#ctor">
+            <summary>Initializes a new instance of type StubIConfigurationRoot</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.GetChildren">
+            <summary>Sets the stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.GetReloadToken">
+            <summary>Sets the stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.GetSectionString">
+            <summary>Sets the stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.Microsoft#Extensions#Configuration#IConfiguration#Item(System.String)">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.ItemGetString">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.ItemSetStringString">
+            <summary>Sets the stub of IConfiguration.set_Item(IConfiguration this, String key, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.Microsoft#Extensions#Configuration#IConfiguration#GetChildren">
+            <summary>Sets the Stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.Microsoft#Extensions#Configuration#IConfiguration#GetReloadToken">
+            <summary>Sets the Stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.Microsoft#Extensions#Configuration#IConfiguration#GetSection(System.String)">
+            <summary>Sets the Stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.Microsoft#Extensions#Configuration#IConfigurationRoot#Reload">
+            <summary>Sets the Stub of IConfigurationRoot.Reload(IConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.Microsoft#Extensions#Configuration#IConfigurationRoot#Providers">
+            <summary>Sets the stub of IConfigurationRoot.get_Providers(IConfigurationRoot this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.ProvidersGet">
+            <summary>Sets the stub of IConfigurationRoot.get_Providers(IConfigurationRoot this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationRoot.Reload">
+            <summary>Sets the stub of IConfigurationRoot.Reload(IConfigurationRoot this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection">
+            <summary>Stub type of Microsoft.Extensions.Configuration.IConfigurationSection</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.#ctor">
+            <summary>Initializes a new instance of type StubIConfigurationSection</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.AttachBackingFieldToValue">
+            <summary>Attaches delegates to emulate StubIConfigurationSection.Value as a property with a backing field.</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.GetChildren">
+            <summary>Sets the stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.GetReloadToken">
+            <summary>Sets the stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.GetSectionString">
+            <summary>Sets the stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.Microsoft#Extensions#Configuration#IConfiguration#Item(System.String)">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.ItemGetString">
+            <summary>Sets the stub of IConfiguration.get_Item(IConfiguration this, String key)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.ItemSetStringString">
+            <summary>Sets the stub of IConfiguration.set_Item(IConfiguration this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.Microsoft#Extensions#Configuration#IConfigurationSection#Key">
+            <summary>Sets the stub of IConfigurationSection.get_Key(IConfigurationSection this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.KeyGet">
+            <summary>Sets the stub of IConfigurationSection.get_Key(IConfigurationSection this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.Microsoft#Extensions#Configuration#IConfiguration#GetChildren">
+            <summary>Sets the Stub of IConfiguration.GetChildren(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.Microsoft#Extensions#Configuration#IConfiguration#GetReloadToken">
+            <summary>Sets the Stub of IConfiguration.GetReloadToken(IConfiguration this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.Microsoft#Extensions#Configuration#IConfiguration#GetSection(System.String)">
+            <summary>Sets the Stub of IConfiguration.GetSection(IConfiguration this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.Microsoft#Extensions#Configuration#IConfigurationSection#Path">
+            <summary>Sets the stub of IConfigurationSection.get_Path(IConfigurationSection this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.PathGet">
+            <summary>Sets the stub of IConfigurationSection.get_Path(IConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.Microsoft#Extensions#Configuration#IConfigurationSection#Value">
+            <summary>Sets the stub of IConfigurationSection.get_Value(IConfigurationSection this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.ValueGet">
+            <summary>Sets the stub of IConfigurationSection.get_Value(IConfigurationSection this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSection.ValueSetString">
+            <summary>Sets the stub of IConfigurationSection.set_Value(IConfigurationSection this, String value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSource">
+            <summary>Stub type of Microsoft.Extensions.Configuration.IConfigurationSource</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSource.#ctor">
+            <summary>Initializes a new instance of type StubIConfigurationSource</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSource.BuildIConfigurationBuilder">
+            <summary>Sets the stub of IConfigurationSource.Build(IConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubIConfigurationSource.Microsoft#Extensions#Configuration#IConfigurationSource#Build(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>Sets the Stub of IConfigurationSource.Build(IConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+    </members>
+</doc>

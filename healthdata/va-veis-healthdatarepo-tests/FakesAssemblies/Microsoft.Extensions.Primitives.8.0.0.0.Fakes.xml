@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Extensions.Primitives.8.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken">
+            <summary>Shim type of Microsoft.Extensions.Primitives.CancellationChangeToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.#ctor(Microsoft.Extensions.Primitives.CancellationChangeToken)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.ActiveChangeCallbacksGet">
+            <summary>Sets the Shim of CancellationChangeToken.get_ActiveChangeCallbacks(CancellationChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.ActiveChangeCallbacksSetBoolean">
+            <summary>Sets the Shim of CancellationChangeToken.set_ActiveChangeCallbacks(CancellationChangeToken this, Boolean value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.AllInstances.ActiveChangeCallbacksGet">
+            <summary>Sets the Shim of CancellationChangeToken.get_ActiveChangeCallbacks(CancellationChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.AllInstances.ActiveChangeCallbacksSetBoolean">
+            <summary>Sets the Shim of CancellationChangeToken.set_ActiveChangeCallbacks(CancellationChangeToken this, Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.AllInstances.HasChangedGet">
+            <summary>Sets the Shim of CancellationChangeToken.get_HasChanged(CancellationChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.AllInstances.RegisterChangeCallbackActionOfObjectObject">
+            <summary>Sets the Shim of CancellationChangeToken.RegisterChangeCallback(CancellationChangeToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.AllInstances.TokenGet">
+            <summary>Sets the Shim of CancellationChangeToken.get_Token(CancellationChangeToken this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.Bind(Microsoft.Extensions.Primitives.IChangeToken)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.ConstructorCancellationToken">
+            <summary>Sets the Shim of CancellationChangeToken.CancellationChangeToken(CancellationChangeToken this, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.HasChangedGet">
+            <summary>Sets the Shim of CancellationChangeToken.get_HasChanged(CancellationChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.RegisterChangeCallbackActionOfObjectObject">
+            <summary>Sets the Shim of CancellationChangeToken.RegisterChangeCallback(CancellationChangeToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCancellationChangeToken.TokenGet">
+            <summary>Sets the Shim of CancellationChangeToken.get_Token(CancellationChangeToken this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimChangeToken">
+            <summary>Shim type of Microsoft.Extensions.Primitives.ChangeToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimChangeToken.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimChangeToken.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimChangeToken.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimChangeToken.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimChangeToken.OnChangeFuncOfIChangeTokenAction">
+            <summary>Sets the Shim of ChangeToken.OnChange(Func`1 changeTokenProducer, Action changeTokenConsumer)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimChangeToken.OnChangeOf1FuncOfIChangeTokenActionOfM0M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{Microsoft.Extensions.Primitives.IChangeToken},System.Action{``0},``0,System.IDisposable})">
+            <summary>Sets the Shim of ChangeToken.OnChange(Func`1 changeTokenProducer, Action`1 changeTokenConsumer, !!0 state)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken">
+            <summary>Shim type of Microsoft.Extensions.Primitives.CompositeChangeToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.#ctor(Microsoft.Extensions.Primitives.CompositeChangeToken)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.ActiveChangeCallbacksGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_ActiveChangeCallbacks(CompositeChangeToken this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances.ActiveChangeCallbacksGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_ActiveChangeCallbacks(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances.ChangeTokensGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_ChangeTokens(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances.EnsureCallbacksInitialized">
+            <summary>Sets the Shim of CompositeChangeToken.EnsureCallbacksInitialized(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances.HasChangedGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_HasChanged(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances.RegisterChangeCallbackActionOfObjectObject">
+            <summary>Sets the Shim of CompositeChangeToken.RegisterChangeCallback(CompositeChangeToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances.RegisteredCallbackProxyGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_RegisteredCallbackProxy(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.AllInstances.RegisteredCallbackProxySetBoolean">
+            <summary>Sets the Shim of CompositeChangeToken.set_RegisteredCallbackProxy(CompositeChangeToken this, Boolean value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.Bind(Microsoft.Extensions.Primitives.IChangeToken)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.ChangeTokensGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_ChangeTokens(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.ConstructorIReadOnlyListOfIChangeToken">
+            <summary>Sets the Shim of CompositeChangeToken.CompositeChangeToken(CompositeChangeToken this, IReadOnlyList`1 changeTokens)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.EnsureCallbacksInitialized">
+            <summary>Sets the Shim of CompositeChangeToken.EnsureCallbacksInitialized(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.HasChangedGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_HasChanged(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.OnChangeObject">
+            <summary>Sets the Shim of CompositeChangeToken.OnChange(Object state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.RegisterChangeCallbackActionOfObjectObject">
+            <summary>Sets the Shim of CompositeChangeToken.RegisterChangeCallback(CompositeChangeToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.RegisteredCallbackProxyGet">
+            <summary>Sets the Shim of CompositeChangeToken.get_RegisteredCallbackProxy(CompositeChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.RegisteredCallbackProxySetBoolean">
+            <summary>Sets the Shim of CompositeChangeToken.set_RegisteredCallbackProxy(CompositeChangeToken this, Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimCompositeChangeToken.StaticConstructor">
+            <summary>Sets the Shim of CompositeChangeToken.CompositeChangeToken()</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimExtensions">
+            <summary>Shim type of Microsoft.Extensions.Primitives.Extensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimExtensions.AppendStringBuilderStringSegment">
+            <summary>Sets the Shim of Extensions.Append(StringBuilder builder, StringSegment segment)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment">
+            <summary>Shim type of Microsoft.Extensions.Primitives.StringSegment</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.CheckStringComparisonStringComparison">
+            <summary>Sets the Shim of StringSegment.CheckStringComparison(StringComparison comparisonType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.CompareStringSegmentStringSegmentStringComparison">
+            <summary>Sets the Shim of StringSegment.Compare(StringSegment a, StringSegment b, StringComparison comparisonType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.EqualityOpStringSegmentStringSegment">
+            <summary>Sets the Shim of StringSegment.op_Equality(StringSegment left, StringSegment right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.EqualsStringSegmentStringSegmentStringComparison">
+            <summary>Sets the Shim of StringSegment.Equals(StringSegment a, StringSegment b, StringComparison comparisonType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.ImplicitOpStringSegmentReadOnlyMemoryOfChar">
+            <summary>Sets the Shim of StringSegment.op_Implicit(StringSegment segment)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.ImplicitOpStringStringSegment">
+            <summary>Sets the Shim of StringSegment.op_Implicit(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.InequalityOpStringSegmentStringSegment">
+            <summary>Sets the Shim of StringSegment.op_Inequality(StringSegment left, StringSegment right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.IsNullOrEmptyStringSegment">
+            <summary>Sets the Shim of StringSegment.IsNullOrEmpty(StringSegment value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.StaticConstructor">
+            <summary>Sets the Shim of StringSegment.StringSegment()</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegment.ThrowInvalidArgumentsStringInt32Int32">
+            <summary>Sets the Shim of StringSegment.ThrowInvalidArguments(String buffer, Int32 offset, Int32 length)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer">
+            <summary>Shim type of Microsoft.Extensions.Primitives.StringSegmentComparer</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.#ctor(Microsoft.Extensions.Primitives.StringSegmentComparer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.AllInstances.CompareStringSegmentStringSegment">
+            <summary>Sets the Shim of StringSegmentComparer.Compare(StringSegmentComparer this, StringSegment x, StringSegment y)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.AllInstances.ComparerGet">
+            <summary>Sets the Shim of StringSegmentComparer.get_Comparer(StringSegmentComparer this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.AllInstances.ComparisonGet">
+            <summary>Sets the Shim of StringSegmentComparer.get_Comparison(StringSegmentComparer this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.AllInstances.EqualsStringSegmentStringSegment">
+            <summary>Sets the Shim of StringSegmentComparer.Equals(StringSegmentComparer this, StringSegment x, StringSegment y)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.AllInstances.GetHashCodeStringSegment">
+            <summary>Sets the Shim of StringSegmentComparer.GetHashCode(StringSegmentComparer this, StringSegment obj)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.Bind(System.Collections.Generic.IComparer{Microsoft.Extensions.Primitives.StringSegment})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.Bind(System.Collections.Generic.IEqualityComparer{Microsoft.Extensions.Primitives.StringSegment})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.CompareStringSegmentStringSegment">
+            <summary>Sets the Shim of StringSegmentComparer.Compare(StringSegmentComparer this, StringSegment x, StringSegment y)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.ComparerGet">
+            <summary>Sets the Shim of StringSegmentComparer.get_Comparer(StringSegmentComparer this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.ComparisonGet">
+            <summary>Sets the Shim of StringSegmentComparer.get_Comparison(StringSegmentComparer this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.ConstructorStringComparisonStringComparer">
+            <summary>Sets the Shim of StringSegmentComparer.StringSegmentComparer(StringSegmentComparer this, StringComparison comparison, StringComparer comparer)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.EqualsStringSegmentStringSegment">
+            <summary>Sets the Shim of StringSegmentComparer.Equals(StringSegmentComparer this, StringSegment x, StringSegment y)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.GetHashCodeStringSegment">
+            <summary>Sets the Shim of StringSegmentComparer.GetHashCode(StringSegmentComparer this, StringSegment obj)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.OrdinalGet">
+            <summary>Sets the Shim of StringSegmentComparer.get_Ordinal()</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.OrdinalIgnoreCaseGet">
+            <summary>Sets the Shim of StringSegmentComparer.get_OrdinalIgnoreCase()</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringSegmentComparer.StaticConstructor">
+            <summary>Sets the Shim of StringSegmentComparer.StringSegmentComparer()</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer">
+            <summary>Shim type of Microsoft.Extensions.Primitives.StringTokenizer</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.ShimEnumerator">
+            <summary>Shim type of Microsoft.Extensions.Primitives.StringTokenizer.Enumerator</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.ShimEnumerator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.ShimEnumerator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.ShimEnumerator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.ShimEnumerator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringTokenizer.ShimEnumerator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringValues">
+            <summary>Shim type of Microsoft.Extensions.Primitives.StringValues</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ConcatStringStringValuesRef">
+            <summary>Sets the Shim of StringValues.Concat(String value, StringValues* values)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ConcatStringValuesRefString">
+            <summary>Sets the Shim of StringValues.Concat(StringValues* values, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ConcatStringValuesStringValues">
+            <summary>Sets the Shim of StringValues.Concat(StringValues values1, StringValues values2)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualityOpObjectStringValues">
+            <summary>Sets the Shim of StringValues.op_Equality(Object left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualityOpStringArrayStringValues">
+            <summary>Sets the Shim of StringValues.op_Equality(String[] left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualityOpStringStringValues">
+            <summary>Sets the Shim of StringValues.op_Equality(String left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualityOpStringValuesObject">
+            <summary>Sets the Shim of StringValues.op_Equality(StringValues left, Object right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualityOpStringValuesString">
+            <summary>Sets the Shim of StringValues.op_Equality(StringValues left, String right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualityOpStringValuesStringArray">
+            <summary>Sets the Shim of StringValues.op_Equality(StringValues left, String[] right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualityOpStringValuesStringValues">
+            <summary>Sets the Shim of StringValues.op_Equality(StringValues left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualsStringArrayStringValues">
+            <summary>Sets the Shim of StringValues.Equals(String[] left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualsStringStringValues">
+            <summary>Sets the Shim of StringValues.Equals(String left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualsStringValuesString">
+            <summary>Sets the Shim of StringValues.Equals(StringValues left, String right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualsStringValuesStringArray">
+            <summary>Sets the Shim of StringValues.Equals(StringValues left, String[] right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.EqualsStringValuesStringValues">
+            <summary>Sets the Shim of StringValues.Equals(StringValues left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ImplicitOpStringArrayStringValues">
+            <summary>Sets the Shim of StringValues.op_Implicit(String[] values)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ImplicitOpStringStringValues">
+            <summary>Sets the Shim of StringValues.op_Implicit(String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ImplicitOpStringValuesString">
+            <summary>Sets the Shim of StringValues.op_Implicit(StringValues values)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ImplicitOpStringValuesStringArray">
+            <summary>Sets the Shim of StringValues.op_Implicit(StringValues value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.InequalityOpObjectStringValues">
+            <summary>Sets the Shim of StringValues.op_Inequality(Object left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.InequalityOpStringArrayStringValues">
+            <summary>Sets the Shim of StringValues.op_Inequality(String[] left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.InequalityOpStringStringValues">
+            <summary>Sets the Shim of StringValues.op_Inequality(String left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.InequalityOpStringValuesObject">
+            <summary>Sets the Shim of StringValues.op_Inequality(StringValues left, Object right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.InequalityOpStringValuesString">
+            <summary>Sets the Shim of StringValues.op_Inequality(StringValues left, String right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.InequalityOpStringValuesStringArray">
+            <summary>Sets the Shim of StringValues.op_Inequality(StringValues left, String[] right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.InequalityOpStringValuesStringValues">
+            <summary>Sets the Shim of StringValues.op_Inequality(StringValues left, StringValues right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.IsNullOrEmptyStringValues">
+            <summary>Sets the Shim of StringValues.IsNullOrEmpty(StringValues value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.OutOfBounds">
+            <summary>Sets the Shim of StringValues.OutOfBounds()</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ShimEnumerator">
+            <summary>Shim type of Microsoft.Extensions.Primitives.StringValues.Enumerator</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ShimEnumerator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ShimEnumerator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ShimEnumerator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ShimEnumerator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.ShimEnumerator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues.StaticConstructor">
+            <summary>Sets the Shim of StringValues.StringValues()</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues._GetStringValueg__GetJoinedStringValueFromArray19_1StringArray">
+            <summary>Sets the Shim of StringValues.&lt;GetStringValue&gt;g__GetJoinedStringValueFromArray|19_1(String[] values)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.ShimStringValues._GetStringValueg__GetStringValueFromArray19_0Object">
+            <summary>Sets the Shim of StringValues.&lt;GetStringValue&gt;g__GetStringValueFromArray|19_0(Object value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.StubCancellationChangeToken">
+            <summary>Stub type of Microsoft.Extensions.Primitives.CancellationChangeToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.StubCancellationChangeToken.#ctor(System.Threading.CancellationToken)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubCancellationChangeToken.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.StubCancellationChangeToken.InitializeStub">
+            <summary>Initializes a new instance of type StubCancellationChangeToken</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubCancellationChangeToken.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubCancellationChangeToken.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.StubCompositeChangeToken">
+            <summary>Stub type of Microsoft.Extensions.Primitives.CompositeChangeToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.StubCompositeChangeToken.#ctor(System.Collections.Generic.IReadOnlyList{Microsoft.Extensions.Primitives.IChangeToken})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubCompositeChangeToken.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.StubCompositeChangeToken.InitializeStub">
+            <summary>Initializes a new instance of type StubCompositeChangeToken</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubCompositeChangeToken.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubCompositeChangeToken.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken">
+            <summary>Stub type of Microsoft.Extensions.Primitives.IChangeToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken.#ctor">
+            <summary>Initializes a new instance of type StubIChangeToken</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken.Microsoft#Extensions#Primitives#IChangeToken#ActiveChangeCallbacks">
+            <summary>Sets the stub of IChangeToken.get_ActiveChangeCallbacks(IChangeToken this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken.ActiveChangeCallbacksGet">
+            <summary>Sets the stub of IChangeToken.get_ActiveChangeCallbacks(IChangeToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken.Microsoft#Extensions#Primitives#IChangeToken#HasChanged">
+            <summary>Sets the stub of IChangeToken.get_HasChanged(IChangeToken this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken.HasChangedGet">
+            <summary>Sets the stub of IChangeToken.get_HasChanged(IChangeToken this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken.Microsoft#Extensions#Primitives#IChangeToken#RegisterChangeCallback(System.Action{System.Object},System.Object)">
+            <summary>Sets the Stub of IChangeToken.RegisterChangeCallback(IChangeToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Primitives.Fakes.StubIChangeToken.RegisterChangeCallbackActionOfObjectObject">
+            <summary>Sets the stub of IChangeToken.RegisterChangeCallback(IChangeToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.MicrosoftExtensionsPrimitivesDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of Microsoft.Extensions.Primitives</summary>
+        </member>
+    </members>
+</doc>

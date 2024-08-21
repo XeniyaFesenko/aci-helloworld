@@ -1,0 +1,1226 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Extensions.Configuration.8.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimChainedBuilderExtensions">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ChainedBuilderExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedBuilderExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedBuilderExtensions.AddConfigurationIConfigurationBuilderIConfiguration">
+            <summary>Sets the Shim of ChainedBuilderExtensions.AddConfiguration(IConfigurationBuilder configurationBuilder, IConfiguration config)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedBuilderExtensions.AddConfigurationIConfigurationBuilderIConfigurationBoolean">
+            <summary>Sets the Shim of ChainedBuilderExtensions.AddConfiguration(IConfigurationBuilder configurationBuilder, IConfiguration config, Boolean shouldDisposeConfiguration)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedBuilderExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedBuilderExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedBuilderExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ChainedConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.ChainedConfigurationProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances.ConfigurationGet">
+            <summary>Sets the Shim of ChainedConfigurationProvider.get_Configuration(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances.Dispose">
+            <summary>Sets the Shim of ChainedConfigurationProvider.Dispose(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the Shim of ChainedConfigurationProvider.GetChildKeys(ChainedConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances.GetReloadToken">
+            <summary>Sets the Shim of ChainedConfigurationProvider.GetReloadToken(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances.Load">
+            <summary>Sets the Shim of ChainedConfigurationProvider.Load(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances.SetStringString">
+            <summary>Sets the Shim of ChainedConfigurationProvider.Set(ChainedConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.AllInstances.TryGetStringStringOut">
+            <summary>Sets the Shim of ChainedConfigurationProvider.TryGet(ChainedConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.Bind(Microsoft.Extensions.Configuration.IConfigurationProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.ConfigurationGet">
+            <summary>Sets the Shim of ChainedConfigurationProvider.get_Configuration(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.ConstructorChainedConfigurationSource">
+            <summary>Sets the Shim of ChainedConfigurationProvider.ChainedConfigurationProvider(ChainedConfigurationProvider this, ChainedConfigurationSource source)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.Dispose">
+            <summary>Sets the Shim of ChainedConfigurationProvider.Dispose(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the Shim of ChainedConfigurationProvider.GetChildKeys(ChainedConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.GetReloadToken">
+            <summary>Sets the Shim of ChainedConfigurationProvider.GetReloadToken(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.Load">
+            <summary>Sets the Shim of ChainedConfigurationProvider.Load(ChainedConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.SetStringString">
+            <summary>Sets the Shim of ChainedConfigurationProvider.Set(ChainedConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationProvider.TryGetStringStringOut">
+            <summary>Sets the Shim of ChainedConfigurationProvider.TryGet(ChainedConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ChainedConfigurationSource</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.#ctor(Microsoft.Extensions.Configuration.ChainedConfigurationSource)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.AllInstances.BuildIConfigurationBuilder">
+            <summary>Sets the Shim of ChainedConfigurationSource.Build(ChainedConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.AllInstances.ConfigurationGet">
+            <summary>Sets the Shim of ChainedConfigurationSource.get_Configuration(ChainedConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.AllInstances.ConfigurationSetIConfiguration">
+            <summary>Sets the Shim of ChainedConfigurationSource.set_Configuration(ChainedConfigurationSource this, IConfiguration value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.AllInstances.ShouldDisposeConfigurationGet">
+            <summary>Sets the Shim of ChainedConfigurationSource.get_ShouldDisposeConfiguration(ChainedConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.AllInstances.ShouldDisposeConfigurationSetBoolean">
+            <summary>Sets the Shim of ChainedConfigurationSource.set_ShouldDisposeConfiguration(ChainedConfigurationSource this, Boolean value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.Bind(Microsoft.Extensions.Configuration.IConfigurationSource)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.BuildIConfigurationBuilder">
+            <summary>Sets the Shim of ChainedConfigurationSource.Build(ChainedConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.ConfigurationGet">
+            <summary>Sets the Shim of ChainedConfigurationSource.get_Configuration(ChainedConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.ConfigurationSetIConfiguration">
+            <summary>Sets the Shim of ChainedConfigurationSource.set_Configuration(ChainedConfigurationSource this, IConfiguration value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.Constructor">
+            <summary>Sets the Shim of ChainedConfigurationSource.ChainedConfigurationSource(ChainedConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.ShouldDisposeConfigurationGet">
+            <summary>Sets the Shim of ChainedConfigurationSource.get_ShouldDisposeConfiguration(ChainedConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimChainedConfigurationSource.ShouldDisposeConfigurationSetBoolean">
+            <summary>Sets the Shim of ChainedConfigurationSource.set_ShouldDisposeConfiguration(ChainedConfigurationSource this, Boolean value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationBuilder</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.#ctor(Microsoft.Extensions.Configuration.ConfigurationBuilder)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.AddIConfigurationSource">
+            <summary>Sets the Shim of ConfigurationBuilder.Add(ConfigurationBuilder this, IConfigurationSource source)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.AllInstances.AddIConfigurationSource">
+            <summary>Sets the Shim of ConfigurationBuilder.Add(ConfigurationBuilder this, IConfigurationSource source)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.AllInstances.Build">
+            <summary>Sets the Shim of ConfigurationBuilder.Build(ConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.AllInstances.PropertiesGet">
+            <summary>Sets the Shim of ConfigurationBuilder.get_Properties(ConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.AllInstances.SourcesGet">
+            <summary>Sets the Shim of ConfigurationBuilder.get_Sources(ConfigurationBuilder this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.Bind(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.Build">
+            <summary>Sets the Shim of ConfigurationBuilder.Build(ConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.Constructor">
+            <summary>Sets the Shim of ConfigurationBuilder.ConfigurationBuilder(ConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.PropertiesGet">
+            <summary>Sets the Shim of ConfigurationBuilder.get_Properties(ConfigurationBuilder this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationBuilder.SourcesGet">
+            <summary>Sets the Shim of ConfigurationBuilder.get_Sources(ConfigurationBuilder this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationKeyComparer</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.#ctor(Microsoft.Extensions.Configuration.ConfigurationKeyComparer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.AllInstances.CompareStringString">
+            <summary>Sets the Shim of ConfigurationKeyComparer.Compare(ConfigurationKeyComparer this, String x, String y)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.Bind(System.Collections.Generic.IComparer{System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.CompareStringString">
+            <summary>Sets the Shim of ConfigurationKeyComparer.Compare(ConfigurationKeyComparer this, String x, String y)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.ComparisonGet">
+            <summary>Sets the Shim of ConfigurationKeyComparer.get_Comparison()</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.Constructor">
+            <summary>Sets the Shim of ConfigurationKeyComparer.ConfigurationKeyComparer(ConfigurationKeyComparer this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.InstanceGet">
+            <summary>Sets the Shim of ConfigurationKeyComparer.get_Instance()</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationKeyComparer.StaticConstructor">
+            <summary>Sets the Shim of ConfigurationKeyComparer.ConfigurationKeyComparer()</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationManager</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.#ctor(Microsoft.Extensions.Configuration.ConfigurationManager)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AddSourceIConfigurationSource">
+            <summary>Sets the Shim of ConfigurationManager.AddSource(ConfigurationManager this, IConfigurationSource source)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.AddSourceIConfigurationSource">
+            <summary>Sets the Shim of ConfigurationManager.AddSource(ConfigurationManager this, IConfigurationSource source)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.DebuggerToString">
+            <summary>Sets the Shim of ConfigurationManager.DebuggerToString(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.Dispose">
+            <summary>Sets the Shim of ConfigurationManager.Dispose(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.DisposeRegistrations">
+            <summary>Sets the Shim of ConfigurationManager.DisposeRegistrations(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.GetChildren">
+            <summary>Sets the Shim of ConfigurationManager.GetChildren(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.GetSectionString">
+            <summary>Sets the Shim of ConfigurationManager.GetSection(ConfigurationManager this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.ItemGetString">
+            <summary>Sets the Shim of ConfigurationManager.get_Item(ConfigurationManager this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.ItemSetStringString">
+            <summary>Sets the Shim of ConfigurationManager.set_Item(ConfigurationManager this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.MicrosoftExtensionsConfigurationIConfigurationBuilderAddIConfigurationSource">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.Add(ConfigurationManager this, IConfigurationSource source)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.MicrosoftExtensionsConfigurationIConfigurationBuilderBuild">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.Build(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.MicrosoftExtensionsConfigurationIConfigurationGetReloadToken">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfiguration.GetReloadToken(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.MicrosoftExtensionsConfigurationIConfigurationRootReload">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationRoot.Reload(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.PropertiesMicrosoftExtensionsConfigurationIConfigurationBuilderget">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.get_Properties(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.ProvidersMicrosoftExtensionsConfigurationIConfigurationRootget">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationRoot.get_Providers(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.RaiseChanged">
+            <summary>Sets the Shim of ConfigurationManager.RaiseChanged(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.ReloadSources">
+            <summary>Sets the Shim of ConfigurationManager.ReloadSources(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.AllInstances.SourcesGet">
+            <summary>Sets the Shim of ConfigurationManager.get_Sources(ConfigurationManager this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Bind(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Bind(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Bind(Microsoft.Extensions.Configuration.IConfigurationManager)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Bind(Microsoft.Extensions.Configuration.IConfigurationRoot)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Constructor">
+            <summary>Sets the Shim of ConfigurationManager.ConfigurationManager(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.DebuggerToString">
+            <summary>Sets the Shim of ConfigurationManager.DebuggerToString(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.Dispose">
+            <summary>Sets the Shim of ConfigurationManager.Dispose(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.DisposeRegistrations">
+            <summary>Sets the Shim of ConfigurationManager.DisposeRegistrations(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.GetChildren">
+            <summary>Sets the Shim of ConfigurationManager.GetChildren(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.GetSectionString">
+            <summary>Sets the Shim of ConfigurationManager.GetSection(ConfigurationManager this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.ItemGetString">
+            <summary>Sets the Shim of ConfigurationManager.get_Item(ConfigurationManager this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.ItemSetStringString">
+            <summary>Sets the Shim of ConfigurationManager.set_Item(ConfigurationManager this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.MicrosoftExtensionsConfigurationIConfigurationBuilderAddIConfigurationSource">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.Add(ConfigurationManager this, IConfigurationSource source)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.MicrosoftExtensionsConfigurationIConfigurationBuilderBuild">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.Build(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.MicrosoftExtensionsConfigurationIConfigurationGetReloadToken">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfiguration.GetReloadToken(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.MicrosoftExtensionsConfigurationIConfigurationRootReload">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationRoot.Reload(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.PropertiesMicrosoftExtensionsConfigurationIConfigurationBuilderget">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationBuilder.get_Properties(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.ProvidersMicrosoftExtensionsConfigurationIConfigurationRootget">
+            <summary>Sets the Shim of ConfigurationManager.Microsoft.Extensions.Configuration.IConfigurationRoot.get_Providers(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.RaiseChanged">
+            <summary>Sets the Shim of ConfigurationManager.RaiseChanged(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.ReloadSources">
+            <summary>Sets the Shim of ConfigurationManager.ReloadSources(ConfigurationManager this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationManager.SourcesGet">
+            <summary>Sets the Shim of ConfigurationManager.get_Sources(ConfigurationManager this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.ConfigurationProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.DataGet">
+            <summary>Sets the Shim of ConfigurationProvider.get_Data(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.DataSetIDictionaryOfStringString">
+            <summary>Sets the Shim of ConfigurationProvider.set_Data(ConfigurationProvider this, IDictionary`2 value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the Shim of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.GetReloadToken">
+            <summary>Sets the Shim of ConfigurationProvider.GetReloadToken(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.Load">
+            <summary>Sets the Shim of ConfigurationProvider.Load(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.OnReload">
+            <summary>Sets the Shim of ConfigurationProvider.OnReload(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.SetStringString">
+            <summary>Sets the Shim of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.ToString01">
+            <summary>Sets the Shim of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.AllInstances.TryGetStringStringOut">
+            <summary>Sets the Shim of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.Bind(Microsoft.Extensions.Configuration.IConfigurationProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.Constructor">
+            <summary>Sets the Shim of ConfigurationProvider.ConfigurationProvider(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.DataGet">
+            <summary>Sets the Shim of ConfigurationProvider.get_Data(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.DataSetIDictionaryOfStringString">
+            <summary>Sets the Shim of ConfigurationProvider.set_Data(ConfigurationProvider this, IDictionary`2 value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the Shim of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.GetReloadToken">
+            <summary>Sets the Shim of ConfigurationProvider.GetReloadToken(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.Load">
+            <summary>Sets the Shim of ConfigurationProvider.Load(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.OnReload">
+            <summary>Sets the Shim of ConfigurationProvider.OnReload(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.SegmentStringInt32">
+            <summary>Sets the Shim of ConfigurationProvider.Segment(String key, Int32 prefixLength)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.SetStringString">
+            <summary>Sets the Shim of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.ToString">
+            <summary>Sets the Shim of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationProvider.TryGetStringStringOut">
+            <summary>Sets the Shim of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationReloadToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.#ctor(Microsoft.Extensions.Configuration.ConfigurationReloadToken)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.ActiveChangeCallbacksGet">
+            <summary>Sets the Shim of ConfigurationReloadToken.get_ActiveChangeCallbacks(ConfigurationReloadToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.ActiveChangeCallbacksSetBoolean">
+            <summary>Sets the Shim of ConfigurationReloadToken.set_ActiveChangeCallbacks(ConfigurationReloadToken this, Boolean value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.AllInstances.ActiveChangeCallbacksGet">
+            <summary>Sets the Shim of ConfigurationReloadToken.get_ActiveChangeCallbacks(ConfigurationReloadToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.AllInstances.ActiveChangeCallbacksSetBoolean">
+            <summary>Sets the Shim of ConfigurationReloadToken.set_ActiveChangeCallbacks(ConfigurationReloadToken this, Boolean value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.AllInstances.HasChangedGet">
+            <summary>Sets the Shim of ConfigurationReloadToken.get_HasChanged(ConfigurationReloadToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.AllInstances.OnReload">
+            <summary>Sets the Shim of ConfigurationReloadToken.OnReload(ConfigurationReloadToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.AllInstances.RegisterChangeCallbackActionOfObjectObject">
+            <summary>Sets the Shim of ConfigurationReloadToken.RegisterChangeCallback(ConfigurationReloadToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.Bind(Microsoft.Extensions.Primitives.IChangeToken)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.Constructor">
+            <summary>Sets the Shim of ConfigurationReloadToken.ConfigurationReloadToken(ConfigurationReloadToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.HasChangedGet">
+            <summary>Sets the Shim of ConfigurationReloadToken.get_HasChanged(ConfigurationReloadToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.OnReload">
+            <summary>Sets the Shim of ConfigurationReloadToken.OnReload(ConfigurationReloadToken this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationReloadToken.RegisterChangeCallbackActionOfObjectObject">
+            <summary>Sets the Shim of ConfigurationReloadToken.RegisterChangeCallback(ConfigurationReloadToken this, Action`1 callback, Object state)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationRoot</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.#ctor(Microsoft.Extensions.Configuration.ConfigurationRoot)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.DebuggerToString">
+            <summary>Sets the Shim of ConfigurationRoot.DebuggerToString(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.Dispose">
+            <summary>Sets the Shim of ConfigurationRoot.Dispose(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.GetChildren">
+            <summary>Sets the Shim of ConfigurationRoot.GetChildren(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.GetReloadToken">
+            <summary>Sets the Shim of ConfigurationRoot.GetReloadToken(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.GetSectionString">
+            <summary>Sets the Shim of ConfigurationRoot.GetSection(ConfigurationRoot this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.ItemGetString">
+            <summary>Sets the Shim of ConfigurationRoot.get_Item(ConfigurationRoot this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.ItemSetStringString">
+            <summary>Sets the Shim of ConfigurationRoot.set_Item(ConfigurationRoot this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.ProvidersGet">
+            <summary>Sets the Shim of ConfigurationRoot.get_Providers(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.RaiseChanged">
+            <summary>Sets the Shim of ConfigurationRoot.RaiseChanged(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.AllInstances.Reload">
+            <summary>Sets the Shim of ConfigurationRoot.Reload(ConfigurationRoot this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.Bind(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.Bind(Microsoft.Extensions.Configuration.IConfigurationRoot)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.ConstructorIListOfIConfigurationProvider">
+            <summary>Sets the Shim of ConfigurationRoot.ConfigurationRoot(ConfigurationRoot this, IList`1 providers)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.DebuggerToString">
+            <summary>Sets the Shim of ConfigurationRoot.DebuggerToString(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.Dispose">
+            <summary>Sets the Shim of ConfigurationRoot.Dispose(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.GetChildren">
+            <summary>Sets the Shim of ConfigurationRoot.GetChildren(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.GetConfigurationIListOfIConfigurationProviderString">
+            <summary>Sets the Shim of ConfigurationRoot.GetConfiguration(IList`1 providers, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.GetReloadToken">
+            <summary>Sets the Shim of ConfigurationRoot.GetReloadToken(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.GetSectionString">
+            <summary>Sets the Shim of ConfigurationRoot.GetSection(ConfigurationRoot this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.ItemGetString">
+            <summary>Sets the Shim of ConfigurationRoot.get_Item(ConfigurationRoot this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.ItemSetStringString">
+            <summary>Sets the Shim of ConfigurationRoot.set_Item(ConfigurationRoot this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.ProvidersGet">
+            <summary>Sets the Shim of ConfigurationRoot.get_Providers(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.RaiseChanged">
+            <summary>Sets the Shim of ConfigurationRoot.RaiseChanged(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.Reload">
+            <summary>Sets the Shim of ConfigurationRoot.Reload(ConfigurationRoot this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationRoot.SetConfigurationIListOfIConfigurationProviderStringString">
+            <summary>Sets the Shim of ConfigurationRoot.SetConfiguration(IList`1 providers, String key, String value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection">
+            <summary>Shim type of Microsoft.Extensions.Configuration.ConfigurationSection</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.#ctor(Microsoft.Extensions.Configuration.ConfigurationSection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.DebuggerToString">
+            <summary>Sets the Shim of ConfigurationSection.DebuggerToString(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.GetChildren">
+            <summary>Sets the Shim of ConfigurationSection.GetChildren(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.GetReloadToken">
+            <summary>Sets the Shim of ConfigurationSection.GetReloadToken(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.GetSectionString">
+            <summary>Sets the Shim of ConfigurationSection.GetSection(ConfigurationSection this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.ItemGetString">
+            <summary>Sets the Shim of ConfigurationSection.get_Item(ConfigurationSection this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.ItemSetStringString">
+            <summary>Sets the Shim of ConfigurationSection.set_Item(ConfigurationSection this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.KeyGet">
+            <summary>Sets the Shim of ConfigurationSection.get_Key(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.PathGet">
+            <summary>Sets the Shim of ConfigurationSection.get_Path(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.ValueGet">
+            <summary>Sets the Shim of ConfigurationSection.get_Value(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.AllInstances.ValueSetString">
+            <summary>Sets the Shim of ConfigurationSection.set_Value(ConfigurationSection this, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.Bind(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.Bind(Microsoft.Extensions.Configuration.IConfigurationSection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.ConstructorIConfigurationRootString">
+            <summary>Sets the Shim of ConfigurationSection.ConfigurationSection(ConfigurationSection this, IConfigurationRoot root, String path)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.DebuggerToString">
+            <summary>Sets the Shim of ConfigurationSection.DebuggerToString(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.GetChildren">
+            <summary>Sets the Shim of ConfigurationSection.GetChildren(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.GetReloadToken">
+            <summary>Sets the Shim of ConfigurationSection.GetReloadToken(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.GetSectionString">
+            <summary>Sets the Shim of ConfigurationSection.GetSection(ConfigurationSection this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.ItemGetString">
+            <summary>Sets the Shim of ConfigurationSection.get_Item(ConfigurationSection this, String key)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.ItemSetStringString">
+            <summary>Sets the Shim of ConfigurationSection.set_Item(ConfigurationSection this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.KeyGet">
+            <summary>Sets the Shim of ConfigurationSection.get_Key(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.PathGet">
+            <summary>Sets the Shim of ConfigurationSection.get_Path(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.ValueGet">
+            <summary>Sets the Shim of ConfigurationSection.get_Value(ConfigurationSection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimConfigurationSection.ValueSetString">
+            <summary>Sets the Shim of ConfigurationSection.set_Value(ConfigurationSection this, String value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimMemoryConfigurationBuilderExtensions">
+            <summary>Shim type of Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimMemoryConfigurationBuilderExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimMemoryConfigurationBuilderExtensions.AddInMemoryCollectionIConfigurationBuilder">
+            <summary>Sets the Shim of MemoryConfigurationBuilderExtensions.AddInMemoryCollection(IConfigurationBuilder configurationBuilder)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimMemoryConfigurationBuilderExtensions.AddInMemoryCollectionIConfigurationBuilderIEnumerableOfKeyValuePairOfStringString">
+            <summary>Sets the Shim of MemoryConfigurationBuilderExtensions.AddInMemoryCollection(IConfigurationBuilder configurationBuilder, IEnumerable`1 initialData)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimMemoryConfigurationBuilderExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimMemoryConfigurationBuilderExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimMemoryConfigurationBuilderExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider">
+            <summary>Shim type of Microsoft.Extensions.Configuration.StreamConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.StreamConfigurationProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.AllInstances.Load">
+            <summary>Sets the Shim of StreamConfigurationProvider.Load(StreamConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.AllInstances.SourceGet">
+            <summary>Sets the Shim of StreamConfigurationProvider.get_Source(StreamConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.Bind(Microsoft.Extensions.Configuration.IConfigurationProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.ConstructorStreamConfigurationSource">
+            <summary>Sets the Shim of StreamConfigurationProvider.StreamConfigurationProvider(StreamConfigurationProvider this, StreamConfigurationSource source)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.Load">
+            <summary>Sets the Shim of StreamConfigurationProvider.Load(StreamConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationProvider.SourceGet">
+            <summary>Sets the Shim of StreamConfigurationProvider.get_Source(StreamConfigurationProvider this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource">
+            <summary>Shim type of Microsoft.Extensions.Configuration.StreamConfigurationSource</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.#ctor(Microsoft.Extensions.Configuration.StreamConfigurationSource)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.AllInstances.StreamGet">
+            <summary>Sets the Shim of StreamConfigurationSource.get_Stream(StreamConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.AllInstances.StreamSetStream">
+            <summary>Sets the Shim of StreamConfigurationSource.set_Stream(StreamConfigurationSource this, Stream value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.Bind(Microsoft.Extensions.Configuration.IConfigurationSource)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.Constructor">
+            <summary>Sets the Shim of StreamConfigurationSource.StreamConfigurationSource(StreamConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.StreamGet">
+            <summary>Sets the Shim of StreamConfigurationSource.get_Stream(StreamConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.ShimStreamConfigurationSource.StreamSetStream">
+            <summary>Sets the Shim of StreamConfigurationSource.set_Stream(StreamConfigurationSource this, Stream value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationProvider">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ChainedConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.ChainedConfigurationSource)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubChainedConfigurationProvider</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationSource">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ChainedConfigurationSource</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationSource.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationSource.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationSource.InitializeStub">
+            <summary>Initializes a new instance of type StubChainedConfigurationSource</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationSource.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubChainedConfigurationSource.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubConfigurationBuilder">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ConfigurationBuilder</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationBuilder.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationBuilder.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationBuilder.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigurationBuilder</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationBuilder.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationBuilder.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubConfigurationKeyComparer">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ConfigurationKeyComparer</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationKeyComparer.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationKeyComparer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationKeyComparer.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigurationKeyComparer</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationKeyComparer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationKeyComparer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>Sets the Stub of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the stub of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigurationProvider</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.Load">
+            <summary>Sets the Stub of ConfigurationProvider.Load(ConfigurationProvider this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.Load01">
+            <summary>Sets the stub of ConfigurationProvider.Load(ConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.Set(System.String,System.String)">
+            <summary>Sets the Stub of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.SetStringString">
+            <summary>Sets the stub of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.ToString">
+            <summary>Sets the Stub of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.ToString01">
+            <summary>Sets the stub of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.TryGet(System.String,System.String@)">
+            <summary>Sets the Stub of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubConfigurationProvider.TryGetStringStringOut">
+            <summary>Sets the stub of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubConfigurationReloadToken">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ConfigurationReloadToken</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationReloadToken.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationReloadToken.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationReloadToken.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigurationReloadToken</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationReloadToken.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationReloadToken.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubConfigurationRoot">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ConfigurationRoot</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationRoot.#ctor(System.Collections.Generic.IList{Microsoft.Extensions.Configuration.IConfigurationProvider})">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationRoot.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationRoot.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigurationRoot</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationRoot.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationRoot.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubConfigurationSection">
+            <summary>Stub type of Microsoft.Extensions.Configuration.ConfigurationSection</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationSection.#ctor(Microsoft.Extensions.Configuration.IConfigurationRoot,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationSection.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubConfigurationSection.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigurationSection</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationSection.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubConfigurationSection.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider">
+            <summary>Stub type of Microsoft.Extensions.Configuration.StreamConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.StreamConfigurationSource)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>Sets the Stub of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the stub of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubStreamConfigurationProvider</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.Load">
+            <summary>Sets the Stub of StreamConfigurationProvider.Load(StreamConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.Load(System.IO.Stream)">
+            <summary>Sets the Stub of StreamConfigurationProvider.Load(StreamConfigurationProvider this, Stream stream)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.Load01">
+            <summary>Sets the stub of StreamConfigurationProvider.Load(StreamConfigurationProvider this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.LoadStream">
+            <summary>Sets the stub of StreamConfigurationProvider.Load(StreamConfigurationProvider this, Stream stream)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.Set(System.String,System.String)">
+            <summary>Sets the Stub of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.SetStringString">
+            <summary>Sets the stub of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.ToString">
+            <summary>Sets the Stub of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.ToString01">
+            <summary>Sets the stub of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.TryGet(System.String,System.String@)">
+            <summary>Sets the Stub of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationProvider.TryGetStringStringOut">
+            <summary>Sets the stub of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource">
+            <summary>Stub type of Microsoft.Extensions.Configuration.StreamConfigurationSource</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource.Build(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>Sets the Stub of StreamConfigurationSource.Build(StreamConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource.BuildIConfigurationBuilder">
+            <summary>Sets the stub of StreamConfigurationSource.Build(StreamConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource.InitializeStub">
+            <summary>Initializes a new instance of type StubStreamConfigurationSource</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Fakes.StubStreamConfigurationSource.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider">
+            <summary>Shim type of Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.AddStringString">
+            <summary>Sets the Shim of MemoryConfigurationProvider.Add(MemoryConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.AllInstances.AddStringString">
+            <summary>Sets the Shim of MemoryConfigurationProvider.Add(MemoryConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.AllInstances.GetEnumerator">
+            <summary>Sets the Shim of MemoryConfigurationProvider.GetEnumerator(MemoryConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.AllInstances.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the Shim of MemoryConfigurationProvider.System.Collections.IEnumerable.GetEnumerator(MemoryConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.Bind(Microsoft.Extensions.Configuration.IConfigurationProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.ConstructorMemoryConfigurationSource">
+            <summary>Sets the Shim of MemoryConfigurationProvider.MemoryConfigurationProvider(MemoryConfigurationProvider this, MemoryConfigurationSource source)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.GetEnumerator">
+            <summary>Sets the Shim of MemoryConfigurationProvider.GetEnumerator(MemoryConfigurationProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationProvider.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the Shim of MemoryConfigurationProvider.System.Collections.IEnumerable.GetEnumerator(MemoryConfigurationProvider this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource">
+            <summary>Shim type of Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.#ctor(Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.AllInstances.BuildIConfigurationBuilder">
+            <summary>Sets the Shim of MemoryConfigurationSource.Build(MemoryConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.AllInstances.InitialDataGet">
+            <summary>Sets the Shim of MemoryConfigurationSource.get_InitialData(MemoryConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.AllInstances.InitialDataSetIEnumerableOfKeyValuePairOfStringString">
+            <summary>Sets the Shim of MemoryConfigurationSource.set_InitialData(MemoryConfigurationSource this, IEnumerable`1 value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.Bind(Microsoft.Extensions.Configuration.IConfigurationSource)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.BuildIConfigurationBuilder">
+            <summary>Sets the Shim of MemoryConfigurationSource.Build(MemoryConfigurationSource this, IConfigurationBuilder builder)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.Constructor">
+            <summary>Sets the Shim of MemoryConfigurationSource.MemoryConfigurationSource(MemoryConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.InitialDataGet">
+            <summary>Sets the Shim of MemoryConfigurationSource.get_InitialData(MemoryConfigurationSource this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.ShimMemoryConfigurationSource.InitialDataSetIEnumerableOfKeyValuePairOfStringString">
+            <summary>Sets the Shim of MemoryConfigurationSource.set_InitialData(MemoryConfigurationSource this, IEnumerable`1 value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider">
+            <summary>Stub type of Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.#ctor(Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.GetChildKeys(System.Collections.Generic.IEnumerable{System.String},System.String)">
+            <summary>Sets the Stub of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.GetChildKeysIEnumerableOfStringString">
+            <summary>Sets the stub of ConfigurationProvider.GetChildKeys(ConfigurationProvider this, IEnumerable`1 earlierKeys, String parentPath)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubMemoryConfigurationProvider</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.Load">
+            <summary>Sets the Stub of ConfigurationProvider.Load(ConfigurationProvider this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.Load01">
+            <summary>Sets the stub of ConfigurationProvider.Load(ConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.Set(System.String,System.String)">
+            <summary>Sets the Stub of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.SetStringString">
+            <summary>Sets the stub of ConfigurationProvider.Set(ConfigurationProvider this, String key, String value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.ToString">
+            <summary>Sets the Stub of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.ToString01">
+            <summary>Sets the stub of ConfigurationProvider.ToString(ConfigurationProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.TryGet(System.String,System.String@)">
+            <summary>Sets the Stub of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationProvider.TryGetStringStringOut">
+            <summary>Sets the stub of ConfigurationProvider.TryGet(ConfigurationProvider this, String key, String* value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationSource">
+            <summary>Stub type of Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationSource.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationSource.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationSource.InitializeStub">
+            <summary>Initializes a new instance of type StubMemoryConfigurationSource</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationSource.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.Memory.Fakes.StubMemoryConfigurationSource.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

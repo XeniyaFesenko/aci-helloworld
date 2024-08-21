@@ -1,0 +1,857 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Extensions.DependencyInjection.Abstractions.7.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.AddIServiceCollectionIEnumerableOfServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.Add(IServiceCollection collection, IEnumerable`1 descriptors)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.AddIServiceCollectionServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.Add(IServiceCollection collection, ServiceDescriptor descriptor)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.RemoveAllIServiceCollectionType">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.RemoveAll(IServiceCollection collection, Type serviceType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.RemoveAllOf1IServiceCollection``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.RemoveAll(IServiceCollection collection)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.ReplaceIServiceCollectionServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.Replace(IServiceCollection collection, ServiceDescriptor descriptor)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddEnumerableIServiceCollectionIEnumerableOfServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddEnumerable(IServiceCollection services, IEnumerable`1 descriptors)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddEnumerableIServiceCollectionServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddEnumerable(IServiceCollection services, ServiceDescriptor descriptor)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddIServiceCollectionIEnumerableOfServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAdd(IServiceCollection collection, IEnumerable`1 descriptors)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddIServiceCollectionServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAdd(IServiceCollection collection, ServiceDescriptor descriptor)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddScopedIServiceCollectionType">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddScoped(IServiceCollection collection, Type service)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddScopedIServiceCollectionTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddScoped(IServiceCollection collection, Type service, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddScopedIServiceCollectionTypeType">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddScoped(IServiceCollection collection, Type service, Type implementationType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddScopedOf1IServiceCollection``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddScoped(IServiceCollection collection)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddScopedOf1IServiceCollectionFuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0}})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddScoped(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddScopedOf2IServiceCollection``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddScoped(IServiceCollection collection)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddSingletonIServiceCollectionType">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddSingleton(IServiceCollection collection, Type service)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddSingletonIServiceCollectionTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddSingleton(IServiceCollection collection, Type service, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddSingletonIServiceCollectionTypeType">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddSingleton(IServiceCollection collection, Type service, Type implementationType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddSingletonOf1IServiceCollection``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddSingleton(IServiceCollection collection)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddSingletonOf1IServiceCollectionFuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0}})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddSingleton(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddSingletonOf1IServiceCollectionM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection,``0})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddSingleton(IServiceCollection collection, !!0 instance)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddSingletonOf2IServiceCollection``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddSingleton(IServiceCollection collection)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddTransientIServiceCollectionType">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddTransient(IServiceCollection collection, Type service)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddTransientIServiceCollectionTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddTransient(IServiceCollection collection, Type service, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddTransientIServiceCollectionTypeType">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddTransient(IServiceCollection collection, Type service, Type implementationType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddTransientOf1IServiceCollection``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddTransient(IServiceCollection collection)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddTransientOf1IServiceCollectionFuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0}})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddTransient(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Extensions.Fakes.ShimServiceCollectionDescriptorExtensions.TryAddTransientOf2IServiceCollection``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionDescriptorExtensions.TryAddTransient(IServiceCollection collection)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.ActivatorUtilities</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.CreateFactoryTypeTypeArray">
+            <summary>Sets the Shim of ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.CreateInstanceIServiceProviderTypeObjectArray">
+            <summary>Sets the Shim of ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.CreateInstanceOf1IServiceProviderObjectArray``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.IServiceProvider,System.Object[],``0})">
+            <summary>Sets the Shim of ActivatorUtilities.CreateInstance(IServiceProvider provider, Object[] parameters)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.GetServiceOrCreateInstanceIServiceProviderType">
+            <summary>Sets the Shim of ActivatorUtilities.GetServiceOrCreateInstance(IServiceProvider provider, Type type)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilities.GetServiceOrCreateInstanceOf1IServiceProvider``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.IServiceProvider,``0})">
+            <summary>Sets the Shim of ActivatorUtilities.GetServiceOrCreateInstance(IServiceProvider provider)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute.#ctor(Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimActivatorUtilitiesConstructorAttribute.Constructor">
+            <summary>Sets the Shim of ActivatorUtilitiesConstructorAttribute.ActivatorUtilitiesConstructorAttribute(ActivatorUtilitiesConstructorAttribute this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimAsyncServiceScope">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.AsyncServiceScope</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimAsyncServiceScope.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimAsyncServiceScope.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimAsyncServiceScope.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimAsyncServiceScope.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimAsyncServiceScope.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.ObjectFactory</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.#ctor(Microsoft.Extensions.DependencyInjection.ObjectFactory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.AllInstances.BeginInvokeIServiceProviderObjectArrayAsyncCallbackObject">
+            <summary>Sets the Shim of ObjectFactory.BeginInvoke(ObjectFactory this, IServiceProvider serviceProvider, Object[] arguments, AsyncCallback callback, Object object)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.AllInstances.EndInvokeIAsyncResult">
+            <summary>Sets the Shim of ObjectFactory.EndInvoke(ObjectFactory this, IAsyncResult result)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.AllInstances.InvokeIServiceProviderObjectArray">
+            <summary>Sets the Shim of ObjectFactory.Invoke(ObjectFactory this, IServiceProvider serviceProvider, Object[] arguments)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.BeginInvokeIServiceProviderObjectArrayAsyncCallbackObject">
+            <summary>Sets the Shim of ObjectFactory.BeginInvoke(ObjectFactory this, IServiceProvider serviceProvider, Object[] arguments, AsyncCallback callback, Object object)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.Bind(System.ICloneable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.ConstructorObjectIntPtr">
+            <summary>Sets the Shim of ObjectFactory.ObjectFactory(ObjectFactory this, Object object, IntPtr method)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.EndInvokeIAsyncResult">
+            <summary>Sets the Shim of ObjectFactory.EndInvoke(ObjectFactory this, IAsyncResult result)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimObjectFactory.InvokeIServiceProviderObjectArray">
+            <summary>Sets the Shim of ObjectFactory.Invoke(ObjectFactory this, IServiceProvider serviceProvider, Object[] arguments)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.ServiceCollection</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.#ctor(Microsoft.Extensions.DependencyInjection.ServiceCollection)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.Clear">
+            <summary>Sets the Shim of ServiceCollection.Clear(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.ContainsServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.Contains(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.CopyToServiceDescriptorArrayInt32">
+            <summary>Sets the Shim of ServiceCollection.CopyTo(ServiceCollection this, ServiceDescriptor[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.CountGet">
+            <summary>Sets the Shim of ServiceCollection.get_Count(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.GetEnumerator">
+            <summary>Sets the Shim of ServiceCollection.GetEnumerator(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.IndexOfServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.IndexOf(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.InsertInt32ServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.Insert(ServiceCollection this, Int32 index, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.IsReadOnlyGet">
+            <summary>Sets the Shim of ServiceCollection.get_IsReadOnly(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.ItemGetInt32">
+            <summary>Sets the Shim of ServiceCollection.get_Item(ServiceCollection this, Int32 index)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.ItemSetInt32ServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.set_Item(ServiceCollection this, Int32 index, ServiceDescriptor value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.MakeReadOnly">
+            <summary>Sets the Shim of ServiceCollection.MakeReadOnly(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.RemoveAtInt32">
+            <summary>Sets the Shim of ServiceCollection.RemoveAt(ServiceCollection this, Int32 index)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.RemoveServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.Remove(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.SystemCollectionsGenericICollectionMicrosoftExtensionsDependencyInjectionServiceDescriptorAddServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.System.Collections.Generic.ICollection&lt;Microsoft.Extensions.DependencyInjection.ServiceDescriptor&gt;.Add(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.AllInstances.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the Shim of ServiceCollection.System.Collections.IEnumerable.GetEnumerator(ServiceCollection this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Bind(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Bind(System.Collections.Generic.ICollection{Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Bind(System.Collections.Generic.IEnumerable{Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Bind(System.Collections.Generic.IList{Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Clear">
+            <summary>Sets the Shim of ServiceCollection.Clear(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.Constructor">
+            <summary>Sets the Shim of ServiceCollection.ServiceCollection(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.ContainsServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.Contains(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.CopyToServiceDescriptorArrayInt32">
+            <summary>Sets the Shim of ServiceCollection.CopyTo(ServiceCollection this, ServiceDescriptor[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.CountGet">
+            <summary>Sets the Shim of ServiceCollection.get_Count(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.GetEnumerator">
+            <summary>Sets the Shim of ServiceCollection.GetEnumerator(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.IndexOfServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.IndexOf(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.InsertInt32ServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.Insert(ServiceCollection this, Int32 index, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.IsReadOnlyGet">
+            <summary>Sets the Shim of ServiceCollection.get_IsReadOnly(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.ItemGetInt32">
+            <summary>Sets the Shim of ServiceCollection.get_Item(ServiceCollection this, Int32 index)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.ItemSetInt32ServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.set_Item(ServiceCollection this, Int32 index, ServiceDescriptor value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.MakeReadOnly">
+            <summary>Sets the Shim of ServiceCollection.MakeReadOnly(ServiceCollection this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.RemoveAtInt32">
+            <summary>Sets the Shim of ServiceCollection.RemoveAt(ServiceCollection this, Int32 index)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.RemoveServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.Remove(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.SystemCollectionsGenericICollectionMicrosoftExtensionsDependencyInjectionServiceDescriptorAddServiceDescriptor">
+            <summary>Sets the Shim of ServiceCollection.System.Collections.Generic.ICollection&lt;Microsoft.Extensions.DependencyInjection.ServiceDescriptor&gt;.Add(ServiceCollection this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollection.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the Shim of ServiceCollection.System.Collections.IEnumerable.GetEnumerator(ServiceCollection this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddScopedIServiceCollectionType">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddScoped(IServiceCollection services, Type serviceType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddScopedIServiceCollectionTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddScoped(IServiceCollection services, Type serviceType, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddScopedIServiceCollectionTypeType">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddScoped(IServiceCollection services, Type serviceType, Type implementationType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddScopedOf1IServiceCollection``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddScoped(IServiceCollection services)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddScopedOf1IServiceCollectionFuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0},Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddScoped(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddScopedOf2IServiceCollection``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddScoped(IServiceCollection services)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddScopedOf2IServiceCollectionFuncOfIServiceProviderM1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``1},Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddScoped(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonIServiceCollectionType">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services, Type serviceType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonIServiceCollectionTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services, Type serviceType, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonIServiceCollectionTypeObject">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services, Type serviceType, Object implementationInstance)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonIServiceCollectionTypeType">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services, Type serviceType, Type implementationType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonOf1IServiceCollection``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonOf1IServiceCollectionFuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0},Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonOf1IServiceCollectionM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,``0,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services, !!0 implementationInstance)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonOf2IServiceCollection``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddSingletonOf2IServiceCollectionFuncOfIServiceProviderM1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``1},Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddSingleton(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddTransientIServiceCollectionType">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddTransient(IServiceCollection services, Type serviceType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddTransientIServiceCollectionTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddTransient(IServiceCollection services, Type serviceType, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddTransientIServiceCollectionTypeType">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddTransient(IServiceCollection services, Type serviceType, Type implementationType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddTransientOf1IServiceCollection``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddTransient(IServiceCollection services)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddTransientOf1IServiceCollectionFuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``0},Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddTransient(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddTransientOf2IServiceCollection``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddTransient(IServiceCollection services)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.AddTransientOf2IServiceCollectionFuncOfIServiceProviderM1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,``1},Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+            <summary>Sets the Shim of ServiceCollectionServiceExtensions.AddTransient(IServiceCollection services, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceCollectionServiceExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.ServiceDescriptor</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.#ctor(Microsoft.Extensions.DependencyInjection.ServiceDescriptor)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.AllInstances.ImplementationFactoryGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ImplementationFactory(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.AllInstances.ImplementationInstanceGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ImplementationInstance(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.AllInstances.ImplementationTypeGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ImplementationType(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.AllInstances.LifetimeGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_Lifetime(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.AllInstances.ServiceTypeGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ServiceType(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.AllInstances.ToString01">
+            <summary>Sets the Shim of ServiceDescriptor.ToString(ServiceDescriptor this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ConstructorTypeFuncOfIServiceProviderObjectServiceLifetime">
+            <summary>Sets the Shim of ServiceDescriptor.ServiceDescriptor(ServiceDescriptor this, Type serviceType, Func`2 factory, ServiceLifetime lifetime)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ConstructorTypeObject">
+            <summary>Sets the Shim of ServiceDescriptor.ServiceDescriptor(ServiceDescriptor this, Type serviceType, Object instance)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ConstructorTypeTypeServiceLifetime">
+            <summary>Sets the Shim of ServiceDescriptor.ServiceDescriptor(ServiceDescriptor this, Type serviceType, Type implementationType, ServiceLifetime lifetime)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.DescribeTypeFuncOfIServiceProviderObjectServiceLifetime">
+            <summary>Sets the Shim of ServiceDescriptor.Describe(Type serviceType, Func`2 implementationFactory, ServiceLifetime lifetime)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.DescribeTypeTypeServiceLifetime">
+            <summary>Sets the Shim of ServiceDescriptor.Describe(Type serviceType, Type implementationType, ServiceLifetime lifetime)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ImplementationFactoryGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ImplementationFactory(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ImplementationInstanceGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ImplementationInstance(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ImplementationTypeGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ImplementationType(ServiceDescriptor this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.LifetimeGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_Lifetime(ServiceDescriptor this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ScopedOf1FuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.IServiceProvider,``0},Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Scoped(Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ScopedOf2``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Scoped()</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ScopedOf2FuncOfIServiceProviderM1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.IServiceProvider,``1},Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Scoped(Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ScopedTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceDescriptor.Scoped(Type service, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ScopedTypeType">
+            <summary>Sets the Shim of ServiceDescriptor.Scoped(Type service, Type implementationType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ServiceTypeGet">
+            <summary>Sets the Shim of ServiceDescriptor.get_ServiceType(ServiceDescriptor this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.SingletonOf1FuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.IServiceProvider,``0},Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Singleton(Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.SingletonOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Singleton(!!0 implementationInstance)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.SingletonOf2``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Singleton()</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.SingletonOf2FuncOfIServiceProviderM1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.IServiceProvider,``1},Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Singleton(Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.SingletonTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceDescriptor.Singleton(Type serviceType, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.SingletonTypeObject">
+            <summary>Sets the Shim of ServiceDescriptor.Singleton(Type serviceType, Object implementationInstance)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.SingletonTypeType">
+            <summary>Sets the Shim of ServiceDescriptor.Singleton(Type service, Type implementationType)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.ToString">
+            <summary>Sets the Shim of ServiceDescriptor.ToString(ServiceDescriptor this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.TransientOf1FuncOfIServiceProviderM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.IServiceProvider,``0},Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Transient(Func`2 implementationFactory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.TransientOf2``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Transient()</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.TransientOf2FuncOfIServiceProviderM1``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Func{System.IServiceProvider,``1},Microsoft.Extensions.DependencyInjection.ServiceDescriptor})">
+            <summary>Sets the Shim of ServiceDescriptor.Transient(Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.TransientTypeFuncOfIServiceProviderObject">
+            <summary>Sets the Shim of ServiceDescriptor.Transient(Type service, Func`2 implementationFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceDescriptor.TransientTypeType">
+            <summary>Sets the Shim of ServiceDescriptor.Transient(Type service, Type implementationType)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions">
+            <summary>Shim type of Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.CreateAsyncScopeIServiceProvider">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.CreateAsyncScope(IServiceProvider provider)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.CreateAsyncScopeIServiceScopeFactory">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.CreateAsyncScope(IServiceScopeFactory serviceScopeFactory)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.CreateScopeIServiceProvider">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.CreateScope(IServiceProvider provider)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.GetRequiredServiceIServiceProviderType">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.GetRequiredServiceOf1IServiceProvider``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.IServiceProvider,``0})">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.GetServiceOf1IServiceProvider``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.IServiceProvider,``0})">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.GetService(IServiceProvider provider)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.GetServicesIServiceProviderType">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.GetServices(IServiceProvider provider, Type serviceType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.ShimServiceProviderServiceExtensions.GetServicesOf1IServiceProvider``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.IServiceProvider,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>Sets the Shim of ServiceProviderServiceExtensions.GetServices(IServiceProvider provider)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.ActivatorUtilitiesConstructorAttribute</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.Equals(System.Object)">
+            <summary>Sets the Stub of Attribute.Equals(Attribute this, Object obj)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.EqualsObject">
+            <summary>Sets the stub of Attribute.Equals(Attribute this, Object obj)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.GetHashCode">
+            <summary>Sets the Stub of Attribute.GetHashCode(Attribute this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.GetHashCode01">
+            <summary>Sets the stub of Attribute.GetHashCode(Attribute this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.InitializeStub">
+            <summary>Initializes a new instance of type StubActivatorUtilitiesConstructorAttribute</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.IsDefaultAttribute">
+            <summary>Sets the Stub of Attribute.IsDefaultAttribute(Attribute this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.IsDefaultAttribute01">
+            <summary>Sets the stub of Attribute.IsDefaultAttribute(Attribute this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.Match(System.Object)">
+            <summary>Sets the Stub of Attribute.Match(Attribute this, Object obj)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.MatchObject">
+            <summary>Sets the stub of Attribute.Match(Attribute this, Object obj)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.TypeId">
+            <summary>Sets the stub of Attribute.get_TypeId(Attribute this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubActivatorUtilitiesConstructorAttribute.TypeIdGet">
+            <summary>Sets the stub of Attribute.get_TypeId(Attribute this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.IServiceCollection</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.#ctor">
+            <summary>Initializes a new instance of type StubIServiceCollection</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.AddServiceDescriptor">
+            <summary>Sets the stub of ICollection`1.Add(ICollection`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.Clear">
+            <summary>Sets the stub of ICollection`1.Clear(ICollection`1 this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.ContainsServiceDescriptor">
+            <summary>Sets the stub of ICollection`1.Contains(ICollection`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.CopyToServiceDescriptorArrayInt32">
+            <summary>Sets the stub of ICollection`1.CopyTo(ICollection`1 this, ServiceDescriptor[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#ICollection{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#Count">
+            <summary>Sets the stub of ICollection`1.get_Count(ICollection`1 this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.CountGet">
+            <summary>Sets the stub of ICollection`1.get_Count(ICollection`1 this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.GetEnumerator">
+            <summary>Sets the stub of IEnumerable`1.GetEnumerator(IEnumerable`1 this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.GetEnumerator01">
+            <summary>Sets the stub of IEnumerable.GetEnumerator(IEnumerable this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.IndexOfServiceDescriptor">
+            <summary>Sets the stub of IList`1.IndexOf(IList`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.InsertInt32ServiceDescriptor">
+            <summary>Sets the stub of IList`1.Insert(IList`1 this, Int32 index, ServiceDescriptor item)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#ICollection{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#IsReadOnly">
+            <summary>Sets the stub of ICollection`1.get_IsReadOnly(ICollection`1 this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.IsReadOnlyGet">
+            <summary>Sets the stub of ICollection`1.get_IsReadOnly(ICollection`1 this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#IList{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#Item(System.Int32)">
+            <summary>Sets the stub of IList`1.get_Item(IList`1 this, Int32 index)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.ItemGetInt32">
+            <summary>Sets the stub of IList`1.get_Item(IList`1 this, Int32 index)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.ItemSetInt32ServiceDescriptor">
+            <summary>Sets the stub of IList`1.set_Item(IList`1 this, Int32 index, ServiceDescriptor value)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.RemoveAtInt32">
+            <summary>Sets the stub of IList`1.RemoveAt(IList`1 this, Int32 index)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.RemoveServiceDescriptor">
+            <summary>Sets the stub of ICollection`1.Remove(ICollection`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#ICollection{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#Add(Microsoft.Extensions.DependencyInjection.ServiceDescriptor)">
+            <summary>Sets the Stub of ICollection`1.Add(ICollection`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#ICollection{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#Clear">
+            <summary>Sets the Stub of ICollection`1.Clear(ICollection`1 this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#ICollection{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#Contains(Microsoft.Extensions.DependencyInjection.ServiceDescriptor)">
+            <summary>Sets the Stub of ICollection`1.Contains(ICollection`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#ICollection{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#CopyTo(Microsoft.Extensions.DependencyInjection.ServiceDescriptor[],System.Int32)">
+            <summary>Sets the Stub of ICollection`1.CopyTo(ICollection`1 this, ServiceDescriptor[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#ICollection{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#Remove(Microsoft.Extensions.DependencyInjection.ServiceDescriptor)">
+            <summary>Sets the Stub of ICollection`1.Remove(ICollection`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#IEnumerable{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#GetEnumerator">
+            <summary>Sets the Stub of IEnumerable`1.GetEnumerator(IEnumerable`1 this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#IList{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#IndexOf(Microsoft.Extensions.DependencyInjection.ServiceDescriptor)">
+            <summary>Sets the Stub of IList`1.IndexOf(IList`1 this, ServiceDescriptor item)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#IList{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#Insert(System.Int32,Microsoft.Extensions.DependencyInjection.ServiceDescriptor)">
+            <summary>Sets the Stub of IList`1.Insert(IList`1 this, Int32 index, ServiceDescriptor item)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#Generic#IList{Microsoft#Extensions#DependencyInjection#ServiceDescriptor}#RemoveAt(System.Int32)">
+            <summary>Sets the Stub of IList`1.RemoveAt(IList`1 this, Int32 index)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceCollection.System#Collections#IEnumerable#GetEnumerator">
+            <summary>Sets the Stub of IEnumerable.GetEnumerator(IEnumerable this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderFactory`1">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.IServiceProviderFactory&lt;TContainerBuilder&gt;</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderFactory`1.#ctor">
+            <summary>Initializes a new instance of type StubIServiceProviderFactory</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderFactory`1.CreateBuilderIServiceCollection">
+            <summary>Sets the stub of IServiceProviderFactory`1.CreateBuilder(IServiceProviderFactory`1 this, IServiceCollection services)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderFactory`1.CreateServiceProviderT0">
+            <summary>Sets the stub of IServiceProviderFactory`1.CreateServiceProvider(IServiceProviderFactory`1 this, !0 containerBuilder)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderFactory`1.Microsoft#Extensions#DependencyInjection#IServiceProviderFactory{TContainerBuilder}#CreateBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>Sets the Stub of IServiceProviderFactory`1.CreateBuilder(IServiceProviderFactory`1 this, IServiceCollection services)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderFactory`1.Microsoft#Extensions#DependencyInjection#IServiceProviderFactory{TContainerBuilder}#CreateServiceProvider(`0)">
+            <summary>Sets the Stub of IServiceProviderFactory`1.CreateServiceProvider(IServiceProviderFactory`1 this, !0 containerBuilder)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderIsService">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.IServiceProviderIsService</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderIsService.#ctor">
+            <summary>Initializes a new instance of type StubIServiceProviderIsService</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderIsService.IsServiceType">
+            <summary>Sets the stub of IServiceProviderIsService.IsService(IServiceProviderIsService this, Type serviceType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceProviderIsService.Microsoft#Extensions#DependencyInjection#IServiceProviderIsService#IsService(System.Type)">
+            <summary>Sets the Stub of IServiceProviderIsService.IsService(IServiceProviderIsService this, Type serviceType)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScope">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.IServiceScope</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScope.#ctor">
+            <summary>Initializes a new instance of type StubIServiceScope</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScope.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScope.Microsoft#Extensions#DependencyInjection#IServiceScope#ServiceProvider">
+            <summary>Sets the stub of IServiceScope.get_ServiceProvider(IServiceScope this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScope.ServiceProviderGet">
+            <summary>Sets the stub of IServiceScope.get_ServiceProvider(IServiceScope this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScope.System#IDisposable#Dispose">
+            <summary>Sets the Stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScopeFactory">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.IServiceScopeFactory</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScopeFactory.#ctor">
+            <summary>Initializes a new instance of type StubIServiceScopeFactory</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScopeFactory.CreateScope">
+            <summary>Sets the stub of IServiceScopeFactory.CreateScope(IServiceScopeFactory this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubIServiceScopeFactory.Microsoft#Extensions#DependencyInjection#IServiceScopeFactory#CreateScope">
+            <summary>Sets the Stub of IServiceScopeFactory.CreateScope(IServiceScopeFactory this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubISupportRequiredService">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.ISupportRequiredService</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubISupportRequiredService.#ctor">
+            <summary>Initializes a new instance of type StubISupportRequiredService</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubISupportRequiredService.GetRequiredServiceType">
+            <summary>Sets the stub of ISupportRequiredService.GetRequiredService(ISupportRequiredService this, Type serviceType)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubISupportRequiredService.Microsoft#Extensions#DependencyInjection#ISupportRequiredService#GetRequiredService(System.Type)">
+            <summary>Sets the Stub of ISupportRequiredService.GetRequiredService(ISupportRequiredService this, Type serviceType)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceCollection">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.ServiceCollection</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceCollection.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceCollection.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceCollection.InitializeStub">
+            <summary>Initializes a new instance of type StubServiceCollection</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceCollection.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceCollection.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor">
+            <summary>Stub type of Microsoft.Extensions.DependencyInjection.ServiceDescriptor</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.#ctor(System.Type,System.Object)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.#ctor(System.Type,System.Type,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.#ctor(System.Type,System.Func{System.IServiceProvider,System.Object},Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.InitializeStub">
+            <summary>Initializes a new instance of type StubServiceDescriptor</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.ToString">
+            <summary>Sets the Stub of ServiceDescriptor.ToString(ServiceDescriptor this)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.DependencyInjection.Fakes.StubServiceDescriptor.ToString01">
+            <summary>Sets the stub of ServiceDescriptor.ToString(ServiceDescriptor this)</summary>
+        </member>
+    </members>
+</doc>

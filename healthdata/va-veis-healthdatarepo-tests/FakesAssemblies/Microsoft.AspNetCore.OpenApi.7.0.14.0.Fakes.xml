@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNetCore.OpenApi.7.0.14.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions">
+            <summary>Shim type of Microsoft.AspNetCore.Builder.OpenApiEndpointConventionBuilderExtensions</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions.AddAndConfigureOperationForEndpointEndpointBuilderFuncOfOpenApiOperationOpenApiOperation">
+            <summary>Sets the Shim of OpenApiEndpointConventionBuilderExtensions.AddAndConfigureOperationForEndpoint(EndpointBuilder endpointBuilder, Func`2 configure)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions.WithOpenApiOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,``0})">
+            <summary>Sets the Shim of OpenApiEndpointConventionBuilderExtensions.WithOpenApi(!!0 builder)</summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.Fakes.ShimOpenApiEndpointConventionBuilderExtensions.WithOpenApiOf1M0FuncOfOpenApiOperationOpenApiOperation``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Func{Microsoft.OpenApi.Models.OpenApiOperation,Microsoft.OpenApi.Models.OpenApiOperation},``0})">
+            <summary>Sets the Shim of OpenApiEndpointConventionBuilderExtensions.WithOpenApi(!!0 builder, Func`2 configureOperation)</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Extensions.Logging.Abstractions.7.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimLogEntry`1">
+            <summary>Shim type of Microsoft.Extensions.Logging.Abstractions.LogEntry&lt;TState&gt;</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimLogEntry`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimLogEntry`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimLogEntry`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimLogEntry`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimLogEntry`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger">
+            <summary>Shim type of Microsoft.Extensions.Logging.Abstractions.NullLogger</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.#ctor(Microsoft.Extensions.Logging.Abstractions.NullLogger)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.AllInstances.BeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.Abstractions.NullLogger,``0,System.IDisposable})">
+            <summary>Sets the Shim of NullLogger.BeginScope(NullLogger this, !!0 state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.AllInstances.IsEnabledLogLevel">
+            <summary>Sets the Shim of NullLogger.IsEnabled(NullLogger this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.AllInstances.LogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.Abstractions.NullLogger,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets the Shim of NullLogger.Log(NullLogger this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.BeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.IDisposable})">
+            <summary>Sets the Shim of NullLogger.BeginScope(NullLogger this, !!0 state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.Bind(Microsoft.Extensions.Logging.ILogger)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.Constructor">
+            <summary>Sets the Shim of NullLogger.NullLogger(NullLogger this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.InstanceGet">
+            <summary>Sets the Shim of NullLogger.get_Instance()</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.IsEnabledLogLevel">
+            <summary>Sets the Shim of NullLogger.IsEnabled(NullLogger this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger.LogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets the Shim of NullLogger.Log(NullLogger this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1">
+            <summary>Shim type of Microsoft.Extensions.Logging.Abstractions.NullLogger&lt;T&gt;</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.#ctor(Microsoft.Extensions.Logging.Abstractions.NullLogger{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.AllInstances.BeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.Abstractions.NullLogger{`0},``0,System.IDisposable})">
+            <summary>Sets the Shim of NullLogger`1.BeginScope(NullLogger`1 this, !!0 state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.AllInstances.IsEnabledLogLevel">
+            <summary>Sets the Shim of NullLogger`1.IsEnabled(NullLogger`1 this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.AllInstances.LogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.Abstractions.NullLogger{`0},Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets the Shim of NullLogger`1.Log(NullLogger`1 this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.BeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.IDisposable})">
+            <summary>Sets the Shim of NullLogger`1.BeginScope(NullLogger`1 this, !!0 state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.Bind(Microsoft.Extensions.Logging.ILogger)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.Bind(Microsoft.Extensions.Logging.ILogger{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.Constructor">
+            <summary>Sets the Shim of NullLogger`1.NullLogger`1(NullLogger`1 this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.IsEnabledLogLevel">
+            <summary>Sets the Shim of NullLogger`1.IsEnabled(NullLogger`1 this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLogger`1.LogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets the Shim of NullLogger`1.Log(NullLogger`1 this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory">
+            <summary>Shim type of Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.#ctor(Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.AddProviderILoggerProvider">
+            <summary>Sets the Shim of NullLoggerFactory.AddProvider(NullLoggerFactory this, ILoggerProvider provider)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.AllInstances.AddProviderILoggerProvider">
+            <summary>Sets the Shim of NullLoggerFactory.AddProvider(NullLoggerFactory this, ILoggerProvider provider)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.AllInstances.CreateLoggerString">
+            <summary>Sets the Shim of NullLoggerFactory.CreateLogger(NullLoggerFactory this, String name)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.AllInstances.Dispose">
+            <summary>Sets the Shim of NullLoggerFactory.Dispose(NullLoggerFactory this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.Bind(Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.Constructor">
+            <summary>Sets the Shim of NullLoggerFactory.NullLoggerFactory(NullLoggerFactory this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.CreateLoggerString">
+            <summary>Sets the Shim of NullLoggerFactory.CreateLogger(NullLoggerFactory this, String name)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerFactory.Dispose">
+            <summary>Sets the Shim of NullLoggerFactory.Dispose(NullLoggerFactory this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider">
+            <summary>Shim type of Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.#ctor(Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.AllInstances.CreateLoggerString">
+            <summary>Sets the Shim of NullLoggerProvider.CreateLogger(NullLoggerProvider this, String categoryName)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.AllInstances.Dispose">
+            <summary>Sets the Shim of NullLoggerProvider.Dispose(NullLoggerProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.Bind(Microsoft.Extensions.Logging.ILoggerProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.Constructor">
+            <summary>Sets the Shim of NullLoggerProvider.NullLoggerProvider(NullLoggerProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.CreateLoggerString">
+            <summary>Sets the Shim of NullLoggerProvider.CreateLogger(NullLoggerProvider this, String categoryName)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.Dispose">
+            <summary>Sets the Shim of NullLoggerProvider.Dispose(NullLoggerProvider this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.ShimNullLoggerProvider.InstanceGet">
+            <summary>Sets the Shim of NullLoggerProvider.get_Instance()</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLogger`1">
+            <summary>Stub type of Microsoft.Extensions.Logging.Abstractions.NullLogger&lt;T&gt;</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLogger`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLogger`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLogger`1.InitializeStub">
+            <summary>Initializes a new instance of type StubNullLogger</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLogger`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLogger`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLoggerFactory">
+            <summary>Stub type of Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLoggerFactory.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLoggerFactory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLoggerFactory.InitializeStub">
+            <summary>Initializes a new instance of type StubNullLoggerFactory</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLoggerFactory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Abstractions.Fakes.StubNullLoggerFactory.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimEventId">
+            <summary>Shim type of Microsoft.Extensions.Logging.EventId</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimEventId.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimEventId.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimEventId.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimEventId.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimEventId.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimEventId.EqualityOpEventIdEventId">
+            <summary>Sets the Shim of EventId.op_Equality(EventId left, EventId right)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimEventId.ImplicitOpInt32EventId">
+            <summary>Sets the Shim of EventId.op_Implicit(Int32 i)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimEventId.InequalityOpEventIdEventId">
+            <summary>Sets the Shim of EventId.op_Inequality(EventId left, EventId right)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions">
+            <summary>Shim type of Microsoft.Extensions.Logging.LogDefineOptions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.#ctor(Microsoft.Extensions.Logging.LogDefineOptions)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.AllInstances.SkipEnabledCheckGet">
+            <summary>Sets the Shim of LogDefineOptions.get_SkipEnabledCheck(LogDefineOptions this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.AllInstances.SkipEnabledCheckSetBoolean">
+            <summary>Sets the Shim of LogDefineOptions.set_SkipEnabledCheck(LogDefineOptions this, Boolean value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.Constructor">
+            <summary>Sets the Shim of LogDefineOptions.LogDefineOptions(LogDefineOptions this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.SkipEnabledCheckGet">
+            <summary>Sets the Shim of LogDefineOptions.get_SkipEnabledCheck(LogDefineOptions this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogDefineOptions.SkipEnabledCheckSetBoolean">
+            <summary>Sets the Shim of LogDefineOptions.set_SkipEnabledCheck(LogDefineOptions this, Boolean value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLogger`1">
+            <summary>Shim type of Microsoft.Extensions.Logging.Logger&lt;T&gt;</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.#ctor(Microsoft.Extensions.Logging.Logger{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.AllInstances.MicrosoftExtensionsLoggingILoggerBeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.Logger{`0},``0,System.IDisposable})">
+            <summary>Sets the Shim of Logger`1.Microsoft.Extensions.Logging.ILogger.BeginScope(Logger`1 this, !!0 state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.AllInstances.MicrosoftExtensionsLoggingILoggerIsEnabledLogLevel">
+            <summary>Sets the Shim of Logger`1.Microsoft.Extensions.Logging.ILogger.IsEnabled(Logger`1 this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.AllInstances.MicrosoftExtensionsLoggingILoggerLogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.Logger{`0},Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets the Shim of Logger`1.Microsoft.Extensions.Logging.ILogger.Log(Logger`1 this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.Bind(Microsoft.Extensions.Logging.ILogger)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.Bind(Microsoft.Extensions.Logging.ILogger{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.ConstructorILoggerFactory">
+            <summary>Sets the Shim of Logger`1.Logger`1(Logger`1 this, ILoggerFactory factory)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.MicrosoftExtensionsLoggingILoggerBeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.IDisposable})">
+            <summary>Sets the Shim of Logger`1.Microsoft.Extensions.Logging.ILogger.BeginScope(Logger`1 this, !!0 state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.MicrosoftExtensionsLoggingILoggerIsEnabledLogLevel">
+            <summary>Sets the Shim of Logger`1.Microsoft.Extensions.Logging.ILogger.IsEnabled(Logger`1 this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLogger`1.MicrosoftExtensionsLoggingILoggerLogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets the Shim of Logger`1.Microsoft.Extensions.Logging.ILogger.Log(Logger`1 this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions">
+            <summary>Shim type of Microsoft.Extensions.Logging.LoggerExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.BeginScopeILoggerStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.BeginScope(ILogger logger, String messageFormat, Object[] args)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogCriticalILoggerEventIdExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogCritical(ILogger logger, EventId eventId, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogCriticalILoggerEventIdStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogCritical(ILogger logger, EventId eventId, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogCriticalILoggerExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogCritical(ILogger logger, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogCriticalILoggerStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogCritical(ILogger logger, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogDebugILoggerEventIdExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogDebug(ILogger logger, EventId eventId, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogDebugILoggerEventIdStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogDebug(ILogger logger, EventId eventId, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogDebugILoggerExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogDebug(ILogger logger, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogDebugILoggerStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogDebug(ILogger logger, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogErrorILoggerEventIdExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogError(ILogger logger, EventId eventId, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogErrorILoggerEventIdStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogError(ILogger logger, EventId eventId, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogErrorILoggerExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogError(ILogger logger, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogErrorILoggerStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogError(ILogger logger, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogILoggerLogLevelEventIdExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogILoggerLogLevelEventIdStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.Log(ILogger logger, LogLevel logLevel, EventId eventId, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogILoggerLogLevelExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.Log(ILogger logger, LogLevel logLevel, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogILoggerLogLevelStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.Log(ILogger logger, LogLevel logLevel, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogInformationILoggerEventIdExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogInformation(ILogger logger, EventId eventId, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogInformationILoggerEventIdStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogInformation(ILogger logger, EventId eventId, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogInformationILoggerExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogInformation(ILogger logger, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogInformationILoggerStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogInformation(ILogger logger, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogTraceILoggerEventIdExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogTrace(ILogger logger, EventId eventId, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogTraceILoggerEventIdStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogTrace(ILogger logger, EventId eventId, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogTraceILoggerExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogTrace(ILogger logger, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogTraceILoggerStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogTrace(ILogger logger, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogWarningILoggerEventIdExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogWarning(ILogger logger, EventId eventId, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogWarningILoggerEventIdStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogWarning(ILogger logger, EventId eventId, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogWarningILoggerExceptionStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogWarning(ILogger logger, Exception exception, String message, Object[] args)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExtensions.LogWarningILoggerStringObjectArray">
+            <summary>Sets the Shim of LoggerExtensions.LogWarning(ILogger logger, String message, Object[] args)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider">
+            <summary>Shim type of Microsoft.Extensions.Logging.LoggerExternalScopeProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.#ctor(Microsoft.Extensions.Logging.LoggerExternalScopeProvider)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.AllInstances.ForEachScopeOf1ActionOfObjectM0M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.LoggerExternalScopeProvider,System.Action{System.Object,``0},``0})">
+            <summary>Sets the Shim of LoggerExternalScopeProvider.ForEachScope(LoggerExternalScopeProvider this, Action`2 callback, !!0 state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.AllInstances.PushObject">
+            <summary>Sets the Shim of LoggerExternalScopeProvider.Push(LoggerExternalScopeProvider this, Object state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.Bind(Microsoft.Extensions.Logging.IExternalScopeProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.Constructor">
+            <summary>Sets the Shim of LoggerExternalScopeProvider.LoggerExternalScopeProvider(LoggerExternalScopeProvider this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.ForEachScopeOf1ActionOfObjectM0M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Action{System.Object,``0},``0})">
+            <summary>Sets the Shim of LoggerExternalScopeProvider.ForEachScope(LoggerExternalScopeProvider this, Action`2 callback, !!0 state)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerExternalScopeProvider.PushObject">
+            <summary>Sets the Shim of LoggerExternalScopeProvider.Push(LoggerExternalScopeProvider this, Object state)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLoggerFactoryExtensions">
+            <summary>Shim type of Microsoft.Extensions.Logging.LoggerFactoryExtensions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerFactoryExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerFactoryExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerFactoryExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerFactoryExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerFactoryExtensions.CreateLoggerILoggerFactoryType">
+            <summary>Sets the Shim of LoggerFactoryExtensions.CreateLogger(ILoggerFactory factory, Type type)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerFactoryExtensions.CreateLoggerOf1ILoggerFactory``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Logging.ILogger{``0}})">
+            <summary>Sets the Shim of LoggerFactoryExtensions.CreateLogger(ILoggerFactory factory)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage">
+            <summary>Shim type of Microsoft.Extensions.Logging.LoggerMessage</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineLogLevelEventIdString">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineLogLevelEventIdStringLogDefineOptions">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString, LogDefineOptions options)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf1LogLevelEventIdString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,System.Action{Microsoft.Extensions.Logging.ILogger,``0,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf1LogLevelEventIdStringLogDefineOptions``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions,System.Action{Microsoft.Extensions.Logging.ILogger,``0,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString, LogDefineOptions options)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf2LogLevelEventIdString``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf2LogLevelEventIdStringLogDefineOptions``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString, LogDefineOptions options)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf3LogLevelEventIdString``3(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf3LogLevelEventIdStringLogDefineOptions``3(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString, LogDefineOptions options)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf4LogLevelEventIdString``4(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf4LogLevelEventIdStringLogDefineOptions``4(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString, LogDefineOptions options)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf5LogLevelEventIdString``5(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf5LogLevelEventIdStringLogDefineOptions``5(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString, LogDefineOptions options)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf6LogLevelEventIdString``6(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,``5,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineOf6LogLevelEventIdStringLogDefineOptions``6(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Microsoft.Extensions.Logging.LogDefineOptions,System.Action{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,``5,System.Exception}})">
+            <summary>Sets the Shim of LoggerMessage.Define(LogLevel logLevel, EventId eventId, String formatString, LogDefineOptions options)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineScopeOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{Microsoft.Extensions.Logging.ILogger,``0,System.IDisposable}})">
+            <summary>Sets the Shim of LoggerMessage.DefineScope(String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineScopeOf2String``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,System.IDisposable}})">
+            <summary>Sets the Shim of LoggerMessage.DefineScope(String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineScopeOf3String``3(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,System.IDisposable}})">
+            <summary>Sets the Shim of LoggerMessage.DefineScope(String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineScopeOf4String``4(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,System.IDisposable}})">
+            <summary>Sets the Shim of LoggerMessage.DefineScope(String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineScopeOf5String``5(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,System.IDisposable}})">
+            <summary>Sets the Shim of LoggerMessage.DefineScope(String formatString)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineScopeOf6String``6(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Func{Microsoft.Extensions.Logging.ILogger,``0,``1,``2,``3,``4,``5,System.IDisposable}})">
+            <summary>Sets the Shim of LoggerMessage.DefineScope(String formatString)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessage.DefineScopeString">
+            <summary>Sets the Shim of LoggerMessage.DefineScope(String formatString)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute">
+            <summary>Shim type of Microsoft.Extensions.Logging.LoggerMessageAttribute</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.#ctor(Microsoft.Extensions.Logging.LoggerMessageAttribute)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.EventIdGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_EventId(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.EventIdSetInt32">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_EventId(LoggerMessageAttribute this, Int32 value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.EventNameGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_EventName(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.EventNameSetString">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_EventName(LoggerMessageAttribute this, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.LevelGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_Level(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.LevelSetLogLevel">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_Level(LoggerMessageAttribute this, LogLevel value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.MessageGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_Message(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.MessageSetString">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_Message(LoggerMessageAttribute this, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.SkipEnabledCheckGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_SkipEnabledCheck(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.AllInstances.SkipEnabledCheckSetBoolean">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_SkipEnabledCheck(LoggerMessageAttribute this, Boolean value)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.Constructor">
+            <summary>Sets the Shim of LoggerMessageAttribute.LoggerMessageAttribute(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.ConstructorInt32LogLevelString">
+            <summary>Sets the Shim of LoggerMessageAttribute.LoggerMessageAttribute(LoggerMessageAttribute this, Int32 eventId, LogLevel level, String message)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.EventIdGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_EventId(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.EventIdSetInt32">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_EventId(LoggerMessageAttribute this, Int32 value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.EventNameGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_EventName(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.EventNameSetString">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_EventName(LoggerMessageAttribute this, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.LevelGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_Level(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.LevelSetLogLevel">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_Level(LoggerMessageAttribute this, LogLevel value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.MessageGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_Message(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.MessageSetString">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_Message(LoggerMessageAttribute this, String value)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.SkipEnabledCheckGet">
+            <summary>Sets the Shim of LoggerMessageAttribute.get_SkipEnabledCheck(LoggerMessageAttribute this)</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.ShimLoggerMessageAttribute.SkipEnabledCheckSetBoolean">
+            <summary>Sets the Shim of LoggerMessageAttribute.set_SkipEnabledCheck(LoggerMessageAttribute this, Boolean value)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubIExternalScopeProvider">
+            <summary>Stub type of Microsoft.Extensions.Logging.IExternalScopeProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubIExternalScopeProvider.#ctor">
+            <summary>Initializes a new instance of type StubIExternalScopeProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubIExternalScopeProvider.ForEachScopeOf1ActionOfObjectM0M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Action{System.Object,``0},``0})">
+            <summary>Sets stubs of ForEachScope(IExternalScopeProvider this, Action`2 callback, !!0 state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubIExternalScopeProvider.Microsoft#Extensions#Logging#IExternalScopeProvider#ForEachScope``1(System.Action{System.Object,``0},``0)">
+            <summary>Sets the Stub of IExternalScopeProvider.ForEachScope(IExternalScopeProvider this, Action`2 callback, !!0 state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubIExternalScopeProvider.Microsoft#Extensions#Logging#IExternalScopeProvider#Push(System.Object)">
+            <summary>Sets the Stub of IExternalScopeProvider.Push(IExternalScopeProvider this, Object state)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubIExternalScopeProvider.PushObject">
+            <summary>Sets the stub of IExternalScopeProvider.Push(IExternalScopeProvider this, Object state)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubILogger">
+            <summary>Stub type of Microsoft.Extensions.Logging.ILogger</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger.#ctor">
+            <summary>Initializes a new instance of type StubILogger</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger.BeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.IDisposable})">
+            <summary>Sets stubs of BeginScope(ILogger this, !!0 state)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubILogger.IsEnabledLogLevel">
+            <summary>Sets the stub of ILogger.IsEnabled(ILogger this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger.LogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets stubs of Log(ILogger this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger.Microsoft#Extensions#Logging#ILogger#BeginScope``1(``0)">
+            <summary>Sets the Stub of ILogger.BeginScope(ILogger this, !!0 state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger.Microsoft#Extensions#Logging#ILogger#IsEnabled(Microsoft.Extensions.Logging.LogLevel)">
+            <summary>Sets the Stub of ILogger.IsEnabled(ILogger this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger.Microsoft#Extensions#Logging#ILogger#Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">
+            <summary>Sets the Stub of ILogger.Log(ILogger this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubILogger`1">
+            <summary>Stub type of Microsoft.Extensions.Logging.ILogger&lt;TCategoryName&gt;</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger`1.#ctor">
+            <summary>Initializes a new instance of type StubILogger</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger`1.BeginScopeOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.IDisposable})">
+            <summary>Sets stubs of BeginScope(ILogger this, !!0 state)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubILogger`1.IsEnabledLogLevel">
+            <summary>Sets the stub of ILogger.IsEnabled(ILogger this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger`1.LogOf1LogLevelEventIdM0ExceptionFuncOfM0ExceptionString``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String}})">
+            <summary>Sets stubs of Log(ILogger this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger`1.Microsoft#Extensions#Logging#ILogger#BeginScope``1(``0)">
+            <summary>Sets the Stub of ILogger.BeginScope(ILogger this, !!0 state)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger`1.Microsoft#Extensions#Logging#ILogger#IsEnabled(Microsoft.Extensions.Logging.LogLevel)">
+            <summary>Sets the Stub of ILogger.IsEnabled(ILogger this, LogLevel logLevel)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILogger`1.Microsoft#Extensions#Logging#ILogger#Log``1(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,``0,System.Exception,System.Func{``0,System.Exception,System.String})">
+            <summary>Sets the Stub of ILogger.Log(ILogger this, LogLevel logLevel, EventId eventId, !!0 state, Exception exception, Func`3 formatter)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory">
+            <summary>Stub type of Microsoft.Extensions.Logging.ILoggerFactory</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory.#ctor">
+            <summary>Initializes a new instance of type StubILoggerFactory</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory.AddProviderILoggerProvider">
+            <summary>Sets the stub of ILoggerFactory.AddProvider(ILoggerFactory this, ILoggerProvider provider)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory.CreateLoggerString">
+            <summary>Sets the stub of ILoggerFactory.CreateLogger(ILoggerFactory this, String categoryName)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory.Microsoft#Extensions#Logging#ILoggerFactory#AddProvider(Microsoft.Extensions.Logging.ILoggerProvider)">
+            <summary>Sets the Stub of ILoggerFactory.AddProvider(ILoggerFactory this, ILoggerProvider provider)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory.Microsoft#Extensions#Logging#ILoggerFactory#CreateLogger(System.String)">
+            <summary>Sets the Stub of ILoggerFactory.CreateLogger(ILoggerFactory this, String categoryName)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILoggerFactory.System#IDisposable#Dispose">
+            <summary>Sets the Stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubILoggerProvider">
+            <summary>Stub type of Microsoft.Extensions.Logging.ILoggerProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILoggerProvider.#ctor">
+            <summary>Initializes a new instance of type StubILoggerProvider</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubILoggerProvider.CreateLoggerString">
+            <summary>Sets the stub of ILoggerProvider.CreateLogger(ILoggerProvider this, String categoryName)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubILoggerProvider.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILoggerProvider.Microsoft#Extensions#Logging#ILoggerProvider#CreateLogger(System.String)">
+            <summary>Sets the Stub of ILoggerProvider.CreateLogger(ILoggerProvider this, String categoryName)</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubILoggerProvider.System#IDisposable#Dispose">
+            <summary>Sets the Stub of IDisposable.Dispose(IDisposable this)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubISupportExternalScope">
+            <summary>Stub type of Microsoft.Extensions.Logging.ISupportExternalScope</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubISupportExternalScope.#ctor">
+            <summary>Initializes a new instance of type StubISupportExternalScope</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubISupportExternalScope.Microsoft#Extensions#Logging#ISupportExternalScope#SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)">
+            <summary>Sets the Stub of ISupportExternalScope.SetScopeProvider(ISupportExternalScope this, IExternalScopeProvider scopeProvider)</summary>
+        </member>
+        <member name="F:Microsoft.Extensions.Logging.Fakes.StubISupportExternalScope.SetScopeProviderIExternalScopeProvider">
+            <summary>Sets the stub of ISupportExternalScope.SetScopeProvider(ISupportExternalScope this, IExternalScopeProvider scopeProvider)</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubLogDefineOptions">
+            <summary>Stub type of Microsoft.Extensions.Logging.LogDefineOptions</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubLogDefineOptions.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLogDefineOptions.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubLogDefineOptions.InitializeStub">
+            <summary>Initializes a new instance of type StubLogDefineOptions</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLogDefineOptions.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLogDefineOptions.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubLogger`1">
+            <summary>Stub type of Microsoft.Extensions.Logging.Logger&lt;T&gt;</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubLogger`1.#ctor(Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLogger`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubLogger`1.InitializeStub">
+            <summary>Initializes a new instance of type StubLogger</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLogger`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLogger`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Logging.Fakes.StubLoggerExternalScopeProvider">
+            <summary>Stub type of Microsoft.Extensions.Logging.LoggerExternalScopeProvider</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubLoggerExternalScopeProvider.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLoggerExternalScopeProvider.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Logging.Fakes.StubLoggerExternalScopeProvider.InitializeStub">
+            <summary>Initializes a new instance of type StubLoggerExternalScopeProvider</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLoggerExternalScopeProvider.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Logging.Fakes.StubLoggerExternalScopeProvider.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

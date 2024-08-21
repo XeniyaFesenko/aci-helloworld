@@ -1,0 +1,13 @@
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.HeaderEncodingSelector<TContext>: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.HttpProtocolException: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.HttpRequestOptions: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.ReadOnlyMemoryContent: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.SocketsHttpHandler: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.SocketsHttpConnectionContext: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.SocketsHttpPlaintextStreamFilterContext: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpContentHeaders: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpHeaderValueCollection<T>: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpRequestHeaders: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.HttpResponseHeaders: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.MediaTypeWithQualityHeaderValue: Type is sealed.
+C:\GitHub\VA\va-veis-healthdatarepo\va-veis-healthdatarepo-tests\Fakes\System.Net.Http.fakes : warning : Cannot generate stub for System.Net.Http.Headers.TransferCodingWithQualityHeaderValue: Type is sealed.

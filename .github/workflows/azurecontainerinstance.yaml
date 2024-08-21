@@ -41,29 +41,53 @@ jobs:
   #       docker push xeniya001.azurecr.io/docker-documentconversion:${{ github.sha }}
 
   deploy:
-     name: "Deploy Document-Conversion Container app"
-     runs-on: ubuntu-latest
-    #  needs: build
-     steps:            
-        - name: ACR Login
-          run: |
-            ls -l 
-            cd  ../
-            ls -l 
-            pwd 
-            az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
-            az account set -s $ARM_SUBSCRIPTION_ID
-            az acr login -n $ACR_USERNAME
+    #  name: "Deploy Document-Conversion Container app"
+    #  runs-on: ubuntu-latest
+    # #  needs: build
+    #  steps:            
+    #     - name: ACR Login
+    #       run: |
+    #         ls -l 
+    #         cd  ../
+    #         ls -l 
+    #         pwd 
+    #         az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+    #         az account set -s $ARM_SUBSCRIPTION_ID
+    #         az acr login -n $ACR_USERNAME
 
-        - name: Build and deploy Container App
-          uses: azure/container-apps-deploy-action@v1
-          with:
-            appSourcePath: ${{ github.workspace }}
-            # acrName: xeniya001
-            dockerfilePath: Dockerfile
-            resourceGroup: EIS_DEVTEST-INT-EAST-SANDBOX-RG  
-            containerAppName: poc-container-app
-            registryUrl: xeniya001.azurecr.io
-            registryUsername: ${{ vars.ACR_USERNAME_XF }}
-            registryPassword: ${{ secrets.ACR_PASSWORD_XF }}
-            yamlConfigPath: ./az-container-instance/template.yaml
+    #     - name: Build and deploy Container App
+    #       uses: azure/container-apps-deploy-action@v1
+    #       with:
+    #         appSourcePath: ${{ github.workspace }}
+    #         # acrName: xeniya001
+    #         dockerfilePath: Dockerfile
+    #         resourceGroup: EIS_DEVTEST-INT-EAST-SANDBOX-RG  
+    #         containerAppName: poc-container-app
+    #         registryUrl: xeniya001.azurecr.io
+    #         registryUsername: ${{ vars.ACR_USERNAME_XF }}
+    #         registryPassword: ${{ secrets.ACR_PASSWORD_XF }}
+    #         yamlConfigPath: ./az-container-instance/template.yaml
+    name: "Deploy Document-Conversion Container app"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+  
+      - name: Azure Login
+        run: |
+          az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+          az account set -s $ARM_SUBSCRIPTION_ID
+          ls -l 
+          pwd           
+  
+      - name: Build and Deploy Container App
+        uses: azure/container-apps-deploy-action@v1
+        with:
+          appSourcePath: ${{ github.workspace }}
+          dockerfilePath: Dockerfile
+          resourceGroup: EIS_DEVTEST-INT-EAST-SANDBOX-RG  
+          containerAppName: poc-container-app
+          registryUrl: xeniya001.azurecr.io
+          registryUsername: ${{ vars.ACR_USERNAME_XF }}
+          registryPassword: ${{ secrets.ACR_PASSWORD_XF }}
+          yamlConfigPath: ./az-container-instance/template.yaml    

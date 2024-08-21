@@ -1,0 +1,810 @@
+{
+  "clientnames": [
+    {
+      "$id": "1",
+      "Name": "hdr",
+      "values": [
+        "COMMCARE-CRM",
+        "HDR-20560",
+        "HDR-20339",
+        "HDR-24026",
+        "HDR-17350",
+        "PATS-R",
+        "VETHOME"
+      ]
+    },
+    {
+      "$id": "2",
+      "Name": "crm",
+      "values": [
+        "CCWFCRM",
+        "FCMTCRM",
+        "HECCRM",
+        "HRCCRM",
+        "ICPCRM",
+        "INTERNAL",
+        "VCLCRM",
+        "FTPCRM",
+        "VEMSCRM",
+        "VRECRM",
+        "DEFAULT"
+      ]
+    }
+  ],
+  "controllers": [
+    {
+      "Name": "consultnotes",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2.0,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "dischargesummarynote",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": 2.1,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "labsorders",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "notes",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 1.0,
+            "maxapiversion": 2.0,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "nonvamedications",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 1.0,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "nonvameds",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "orders",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "flags",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "problems",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "postings",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 1.0,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "radiologyreports",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "appointmentsvisits",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "medications",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "vitals",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "allergy",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "nonvet",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "appointmentvisit",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "ccwfappointments",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "appointments",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 1,
+            "maxapiversion": 3,
+            "requiredversion": 1,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "ccwfconsults",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "consults",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "ccwfflags",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "ccwfnotes",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "ccwforders",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "ccwfpostings",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "defaultcontroller",
+      "validclientgrp": {
+        "$ref": "2"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Name": "alerts",
+      "validclientgrp": {
+        "$ref": "1"
+      },
+      "customviews": {
+        "exists": true,
+        "customviewdetail": [
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "FTPCRM",
+            "assocclientgrp": {
+              "$ref": "1"
+            }
+          },
+          {
+            "minapiversion": 2,
+            "maxapiversion": 3,
+            "requiredversion": null,
+            "prefixname": "default",
+            "assocclientgrp": {
+              "$ref": "2"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
