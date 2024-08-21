@@ -64,4 +64,4 @@ jobs:
             registryUrl: xeniya001.azurecr.io
             registryUsername: ${{ vars.ACR_USERNAME_XF }}
             registryPassword: ${{ secrets.ACR_PASSWORD_XF }}
-            yamlConfigPath: simple-image-container-app.yaml
+            yamlConfigPath: ./az-container-instance/template.yaml
