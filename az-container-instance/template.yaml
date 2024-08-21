@@ -2,10 +2,19 @@ properties:
   managedEnvironmentId: /subscriptions/SUBSCRIPTION_ID_PLACEHOLDER/resourceGroups/RG_PLACEHOLDER/providers/Microsoft.App/managedEnvironments/EISDEVTEST
   configuration:
     ingress:
-      external: true
-      allowInsecure: false
+      external: false
+      allowInsecure: true
       targetPort: 80
   template:
     containers:
       - image: docker-documentconversion:GITHUB_SHA_PLACEHOLDER
         name: test-container-app
+    scale:
+      minReplicas: 1
+      maxReplicas: 5
+      rules:
+      - name: httpscalingrule
+        custom:
+          type: http
+          metadata:
+            concurrentRequests: '50'        
