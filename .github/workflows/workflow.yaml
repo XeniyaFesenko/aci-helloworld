@@ -80,6 +80,6 @@ jobs:
               --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG   \
               --image "${{ env.ACR_USERNAME }}.azurecr.io"/${{ env.REPO }}:latest \
          #     --yaml containerapp.yaml
-          working-directory: ContainerApp  
+        #   working-directory: ContainerApp  
 
  
