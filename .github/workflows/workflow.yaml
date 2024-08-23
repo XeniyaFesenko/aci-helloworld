@@ -39,9 +39,9 @@ jobs:
       
     - name: Push the Docker image
       run: | 
-         docker push -a ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }}
-         docker push -a ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
-         docker push -a  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
+         docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }}
+         docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
+         docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
       #run: docker push -a ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }}:${{ github.sha }}
 
   deploy:
