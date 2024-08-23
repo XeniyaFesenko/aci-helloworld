@@ -1,4 +1,6 @@
 properties:
+  revisionSuffix: 
+  activeRevisionsMode: multiple
   managedEnvironmentId: /subscriptions/SUBSCRIPTION_ID_PLACEHOLDER/resourceGroups/RG_PLACEHOLDER/providers/Microsoft.App/managedEnvironments/EISDEVTEST
   configuration:
     ingress:
