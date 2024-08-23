@@ -50,11 +50,11 @@ jobs:
                   
         - uses: actions/checkout@v4
                   
-        - name: Update containerapp.yaml
-          run : |
-            sed -i "s/pswd/${{ secrets.ACR_PASSWORD }}/g" containerapp.yaml
-            #cat containerapp.yaml
-          working-directory: ContainerApp
+        # - name: Update containerapp.yaml
+        #   run : |
+        #     sed -i "s/pswd/${{ secrets.ACR_PASSWORD }}/g" containerapp.yaml
+        #     #cat containerapp.yaml
+        #   working-directory: ContainerApp
             
         - name: ACR Login
           run: |
