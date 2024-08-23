@@ -15,7 +15,7 @@ env:
   ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
   ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
   REPO: docker-documentconversion 
-  IMAGE_TAG: 1.0.-${{github.run_number}}
+  IMAGE_TAG: 1.0.${{github.run_number}}
 #   TAG: ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
  
 jobs:
