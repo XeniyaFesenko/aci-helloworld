@@ -33,14 +33,15 @@ jobs:
     
     - name: Build the Docker image
       run: |
-           docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
-           docker build . -t ${{ vars.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
+           docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
+        #    docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
       #run: docker build . -t ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }}:${{ github.sha }}
       
     - name: Push the Docker image
       run: | 
          docker push -a ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }}
          docker push -a ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
+         docker push -a  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
       #run: docker push -a ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }}:${{ github.sha }}
 
   deploy:
