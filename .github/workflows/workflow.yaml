@@ -16,7 +16,7 @@ env:
   ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
   REPO: docker-documentconversion 
   IMAGE_TAG: 1.0.-${{github.run_number}}
-  TAG: ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
+#   TAG: ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
  
 jobs:
   build:
@@ -35,7 +35,7 @@ jobs:
     - name: Build the Docker image
       run: | 
            docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
-           docker build . -t $TAG
+           docker build . -t ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
       #run: docker build . -t ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }}:${{ github.sha }}
       
     - name: Push the Docker image
