@@ -26,14 +26,13 @@ jobs:
     
     
     - name: ACR Login
-      run: |
-        az cloud set -s $ARM_SUBSCRIPTION_ID
+      run: | 
         az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
         az account set -s $ARM_SUBSCRIPTION_ID
         az acr login -n $ACR_USERNAME
     
     - name: Build the Docker image
-      run: | 
+      run: |
            docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
            docker build . -t ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
       #run: docker build . -t ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }}:${{ github.sha }}
@@ -60,7 +59,6 @@ jobs:
             
         - name: ACR Login
           run: |
-            az cloud set -s $ARM_SUBSCRIPTION_ID
             az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
             az account set -s $ARM_SUBSCRIPTION_ID
             az acr login -n $ACR_USERNAME
