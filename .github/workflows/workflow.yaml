@@ -16,7 +16,7 @@ env:
   ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
   REPO: docker-documentconversion 
   IMAGE_TAG: 1.0.-${{github.run_number}}
-  TAG: ${{ env.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
+  TAG: ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
  
 jobs:
   build:
