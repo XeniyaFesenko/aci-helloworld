@@ -1,5 +1,5 @@
 apiVersion: '2021-07-01'
-location: estus
+location: eastus
 name: va-eis-doc-convert-aci-dev
 properties:
   containers:
