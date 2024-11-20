@@ -7,7 +7,8 @@ properties:
     properties:
       command:
       environmentVariables: 
-        ASPNETCORE_Kestrel__Certificates__Default__Password: ${{ secrets.CERT_PASSWORD }}
+        - name: ASPNETCORE_Kestrel__Certificates__Default__Password 
+          value: ${{ secrets.CERT_PASSWORD }}
       image: xeniya001.azurecr.io/docker-documentconversion:latest
       ports:
       - port: 443
