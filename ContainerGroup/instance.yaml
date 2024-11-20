@@ -21,10 +21,10 @@ properties:
     - 10.245.225.68 # DNS Server 1
     - 10.245.225.69 # DNS Server 2
     searchDomains: contoso.com # DNS search suffix
-  # imageRegistryCredentials: # Credentials to pull a private image
-  # - server: xeniya001.azurecr.io
-  #   username: xeniya001
-  #   password: *****
+  imageRegistryCredentials: # Credentials to pull a private image
+  - server: xeniya001.azurecr.io
+    username: xeniya001
+    password: "*****"
   osType: Linux
   ipAddress:
     type: Private

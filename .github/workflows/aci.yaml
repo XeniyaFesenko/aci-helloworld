@@ -63,8 +63,9 @@ jobs:
                  
         - name: Update instance.yaml
           run : |
-            sed -i "s/pswd/${{ env.ACR_PASSWORD }}/g" instance.yaml
-            #cat instance.yaml
+            sed -i "s/value/${{  secrets.CERT_PASSWORD }} }}/g" instance.yaml
+            sed -i "s/password/${{ env.ACR_PASSWORD }}/g" instance.yaml
+            cat instance.yaml
           working-directory: ContainerGroup
         - name: ACR Login
           run: |
