@@ -8,7 +8,7 @@ properties:
       command:
       environmentVariables: 
         - name: ASPNETCORE_Kestrel__Certificates__Default__Password 
-          value: ${{ secrets.CERT_PASSWORD }}
+          value: CERT_PASSWORD
       image: xeniya001.azurecr.io/docker-documentconversion:latest
       ports:
       - port: 443
@@ -24,7 +24,7 @@ properties:
   imageRegistryCredentials: # Credentials to pull a private image
   - server: xeniya001.azurecr.io
     username: xeniya001
-    password: "*****"
+    password: ACR_PASSWORD
   osType: Linux
   ipAddress:
     type: Private
