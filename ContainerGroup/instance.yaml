@@ -25,6 +25,7 @@ properties:
   # - server: xeniya001.azurecr.io
   #   username: xeniya001
   #   password: *****
+  osType: Linux
   ipAddress:
     type: Private
     ports:
