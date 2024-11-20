@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/va-veis-healthdatarepo.props" />
+</Project>

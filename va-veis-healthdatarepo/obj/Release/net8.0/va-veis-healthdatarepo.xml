@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>va-veis-healthdatarepo</name>
+    </assembly>
+    <members>
+        <member name="T:va_veis_healthdatarepo.Controllers.AllergyController">
+            <summary>
+            Allergy Controller to get allergy data from HDR
+            </summary>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.AllergyController.#ctor(va_veis_healthdatarepo.Services.Interfaces.ICDSDataService{va_veis_healthdatarepo.Models.Entities.Allergy},va_veis_healthdatarepo.Services.Interfaces.IDependencyAggregate{va_veis_healthdatarepo.Controllers.AllergyController})">
+            <summary>
+            Allergy Controller to get allergy data from HDR
+            </summary>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.AllergyController.Get(System.String,System.String)">
+            <summary>
+            GET method to get allergy data
+            </summary>
+            <param name="clientName">require client name</param>
+            <param name="nationalId">require veteran national ID</param>
+            <returns>Return allergy data in JSON format</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.AllergyController.Get(va_veis_healthdatarepo.Models.Requests.AllergyDataRequest)">
+            <summary>
+            GET method to get allergy data
+            </summary>
+            <param name="request">user should provide client name and national ID in request parameter"</param>
+            <returns>Return allergy data in JSON format</returns>
+        </member>
+        <member name="T:va_veis_healthdatarepo.Controllers.AppointmentVisitController">
+            <summary>
+            Vital Controller to get veteran Appointment Visit data from HDR
+            </summary>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.AppointmentVisitController.Get(va_veis_healthdatarepo.Models.Requests.VisitRequest)">
+            <summary>
+            GET method to get veteran appointment visit data
+            </summary>
+            <param name="request">user should provide client name and national ID in request parameter. Dates are optional</param>
+            <returns>Json data of all the visits</returns>
+            
+        </member>
+        <member name="T:va_veis_healthdatarepo.Controllers.ProblemsController">
+            <summary>
+            Problem Controller to get veteran problem data from HDR
+            </summary>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.ProblemsController.Get(va_veis_healthdatarepo.Models.Requests.ProblemRequest)">
+            <summary>
+            GET method to get veteran problem data
+            </summary>
+            <param name="request">user should provide client name and national ID in request parameter"</param>
+            <returns>Return veteran problem data in JSON format</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.ProblemsController.Get(System.String,System.String)">
+            <summary>
+            Legacy GET method to get veteran problem data
+            </summary>
+            <param name="clientName">require client name</param>
+            <param name="nationalId">require veteran national ID</param>
+            <returns>return problem data in JSON format</returns>
+        </member>
+        <member name="T:va_veis_healthdatarepo.Controllers.VitalsController">
+            <summary>
+            Vital Controller to get veteran vital data from HDR
+            </summary>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.VitalsController.Get(va_veis_healthdatarepo.Models.Requests.VitalRequest)">
+            <summary>
+            GET method to get veteran vital data
+            </summary>
+            <param name="request">user should provide client name and national ID in request parameter"</param>
+            <returns>Return veteran vital data in JSON format</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Controllers.VitalsController.Get(System.String,System.String,System.String,System.String)">
+            <summary>
+            Legacy GET method to get veteran vital data
+            </summary>
+            <param name="clientName">require client name</param>
+            <param name="nationalId">require veteran national ID</param>
+            <returns>return vital data in JSON format</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Middleware.SwaggerConfigExtension.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures Swagger API documentation and adds it to the specified service collection.
+            </summary>
+            <param name="services">The service collection to add Swagger documentation to.</param>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Middleware.SwaggerConfigExtension.UseSwaggerConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Configures the Swagger middleware to generate and serve Swagger documentation for the API.
+            </summary>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.DataContractSerialize``1(``0)">
+            <summary>
+            Serialize an object to a string using Data Contract Json Serializer.
+            </summary>
+            <typeparam name="T">Type of object.</typeparam>
+            <param name="classInstance">Instance of the object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.DataContractJsonDeserialize``1(System.String)">
+            <summary>
+            Deserialize an object to a string using Data Contract Json Serializer.
+            </summary>
+            <typeparam name="T">Type of object.</typeparam>
+            <param name="payload">Instance of the object.</param>
+            <returns>Deserialized Instance.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.DataContractDeserialize``1(System.String)">
+            <summary>
+            Deserialize an object to a string using Data Contract Json Serializer.
+            </summary>
+            <typeparam name="T">Type of object.</typeparam>
+            <param name="payload">Instance of the object.</param>
+            <returns>Deserialized Instance.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.DeserializeTokenResponse``1(System.String)">
+            <summary>
+            Deserializes a Json response message.
+            </summary>
+            <typeparam name="T">Type of object.</typeparam>
+            <param name="response">String response.</param>
+            <returns>Deserialized Instance.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.JsonDeserialize``1(System.String)">
+            <summary>
+            Deserializes a Json response message.
+            </summary>
+            <typeparam name="T">Type of object.</typeparam>
+            <param name="payload">String response.</param>
+            <returns>Deserialized Instance.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.JsonSerialize``1(``0)">
+            <summary>
+            Serialize an object to a string using Json Serializer.
+            </summary>
+            <typeparam name="T">Type of object.</typeparam>
+            <param name="classInstance">Instance of the object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.ObjectToStream``1(``0)">
+            <summary>
+            Serializes Class instance to a Stream.
+            </summary>
+            <typeparam name="T">Type of Class.</typeparam>
+            <param name="obj">Instance of Class.</param>
+            <returns>Memory Stream.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.DeserializeResponse``1(System.String)">
+            <summary>
+            Deserialize Response.
+            </summary>
+            <typeparam name="T">Class Type.</typeparam>
+            <param name="returnValue">Response as string.</param>
+            <returns>Response Class Instance.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.DeserializeXmlResponse``1(System.String)">
+            <summary>
+            Deserialize Response.
+            </summary>
+            <typeparam name="T">Class Type.</typeparam>
+            <param name="returnValue">Response as string.</param>
+            <returns>Response Class Instance.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.DeserializeXmlResponse``1(System.IO.Stream)">
+            <summary>
+            Deserialize Response.
+            </summary>
+            <typeparam name="T">Class Type.</typeparam>
+            <param name="stream"></param>
+            <param name="returnValue">Response as string.</param>
+            <returns>Response Class Instance.</returns>
+        </member>
+        <member name="M:va_veis_healthdatarepo.Utilities.Serialization.XmlSerializeInstance``1(``0)">
+            <summary>
+            Serialize class instance to XML using XmlSerializer.
+            </summary>
+            <typeparam name="T">Type of instance.</typeparam>
+            <param name="classInstance">Instance of type.</param>
+            <returns>XML string.</returns>
+        </member>
+    </members>
+</doc>

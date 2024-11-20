@@ -7,10 +7,10 @@ properties:
     properties:
       command:
       environmentVariables: 
+        ASPNETCORE_Kestrel__Certificates__Default__Password: ${{ secrets.CERT_PASSWORD }}
       image: xeniya001.azurecr.io/docker-documentconversion:latest
       ports:
-      - port: 80
-  #    - port: 443
+      - port: 443
       resources:
         requests:
           cpu: 2.0
@@ -27,8 +27,7 @@ properties:
   ipAddress:
     type: Private
     ports:
-      - port: 80
- #     - port: 443
+      - port: 443
   subnetIds:
     - id: /subscriptions/96cb683f-4550-464a-8fcf-a7054553e9e6/resourceGroups/EIS_DEVTEST-INT-EAST-SANDBOX-RG/providers/Microsoft.Network/virtualNetworks/vnet/subnets/ACI-Private
 tags: null

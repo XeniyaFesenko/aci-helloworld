@@ -1,0 +1,106 @@
+name: Docker Image Build
+
+on:
+  push:
+    branches:
+      - arvind
+      - main
+  workflow_dispatch:
+
+
+env:
+  ARM_CLIENT_ID: ${{ vars.ARM_CLIENT_ID }}
+  ARM_TENANT_ID: ${{ vars.ARM_TENANT_ID }}
+  ARM_CLIENT_SECRET: ${{ vars.ARM_CLIENT_SECRET }}
+  ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
+  ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+  ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
+  REPO: docker-documentconversion
+  IMAGE_TAG: 1.0.${{github.run_number}}
+  DOCKER_BUILDKIT: 1
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+   
+    #- name: ACR Login
+    #  uses: azure/docker-login@v2
+    #  with:
+    #        login-server: "${{ env.ACR_USERNAME }}$.azurecr.io"
+    #        username: $ACR_USERNAME
+    #        password: $ACR_PASSWORD
+   
+    - name: ACR Login
+      run: |
+        az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+        az account set -s $ARM_SUBSCRIPTION_ID
+        az acr login -n $ACR_USERNAME
+   
+    - name: Build the Docker image
+       #run: docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:v1
+      run: |
+        echo "${{ secrets.CERT_PASSWORD }}" > password.txt
+        docker build --secret id=cert_pass,src=password.txt . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}} -t  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
+        rm password.txt
+        
+
+    - name: Push the Docker image
+      run: | 
+        docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
+        docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
+        docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }}
+
+
+  deploy:
+     name: "Deploy Document-Conversion Container Instance"
+     runs-on: ubuntu-latest
+     needs: build
+     steps:
+                 
+        - uses: actions/checkout@v4
+                 
+        - name: Update instance.yaml
+          run : |
+            sed -i "s/pswd/${{ env.ACR_PASSWORD }}/g" instance.yaml
+            #cat instance.yaml
+          working-directory: ContainerGroup
+        - name: ACR Login
+          run: |
+            az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+            az account set -s $ARM_SUBSCRIPTION_ID
+            az acr login -n $ACR_USERNAME
+           
+        - name: Create Container Instance
+          run:  |
+            az container create \
+              --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG \
+              --image "${{ env.ACR_USERNAME }}.azurecr.io"/${{ env.REPO }}:latest \
+              --registry-login-server "${{ env.ACR_USERNAME }}.azurecr.io" \
+              --file instance.yaml
+          working-directory: ContainerGroup
+
+        # - name: Update container Instance
+        #   run:  |  
+        #     az container update \
+        #       --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG \
+        #       --image "${{ env.ACR_USERNAME }}.azurecr.io"/${{ env.REPO }}:latest \
+        #       --registry-login-server "${{ env.ACR_USERNAME }}.azurecr.io" \
+        #       --file instance.yaml
+        #   working-directory: ContainerGroup              
+
+        - name: Get IP address of ACI Instance
+          id: get-ip
+          run: |
+            # Retrieve the ACI private IP address
+
+            ACI_PRIVATE_IP=$(az container show \
+              --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG \
+              --name va-eis-doc-convert-aci-dev \
+              --query "ipAddress.ip" \
+              --output tsv)
+            echo "ACI_PRIVATE_IP: $ACI_PRIVATE_IP"
+            echo "ACI_PIP=$ACI_PRIVATE_IP" >> "$GITHUB_OUTPUT"
+           
+

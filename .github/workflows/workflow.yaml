@@ -1,85 +1,85 @@
-name: Docker Image Build
+# name: Docker Image Build
 
-on:
-  push:
-    branches: 
-      - xeniya
-  workflow_dispatch:
+# on:
+#   push:
+#     branches: 
+#       - xeniya
+#   workflow_dispatch:
 
 
-env:
-  ARM_CLIENT_ID: ${{ vars.ARM_CLIENT_ID }}
-  ARM_TENANT_ID: ${{ vars.ARM_TENANT_ID }}
-  ARM_CLIENT_SECRET: ${{ vars.ARM_CLIENT_SECRET }}
-  ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
-  ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
-  ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
-  REPO: docker-documentconversion 
-  IMAGE_TAG: 1.0.${{github.run_number}}
-#   TAG: ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
+# env:
+#   ARM_CLIENT_ID: ${{ vars.ARM_CLIENT_ID }}
+#   ARM_TENANT_ID: ${{ vars.ARM_TENANT_ID }}
+#   ARM_CLIENT_SECRET: ${{ vars.ARM_CLIENT_SECRET }}
+#   ARM_SUBSCRIPTION_ID: ${{ vars.ARM_SUBSCRIPTION_ID }}
+#   ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+#   ACR_USERNAME: ${{ vars.ACR_USERNAME_XF }}
+#   REPO: docker-documentconversion 
+#   IMAGE_TAG: 1.0.${{github.run_number}}
+# #   TAG: ${{ vars.ACR_USERNAME }}/${{ env.REPO }}:${{env.IMAGE_TAG}}
  
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v4
     
     
-    - name: ACR Login
-      run: | 
-        az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
-        az account set -s $ARM_SUBSCRIPTION_ID
-        az acr login -n $ACR_USERNAME
+#     - name: ACR Login
+#       run: | 
+#         az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+#         az account set -s $ARM_SUBSCRIPTION_ID
+#         az acr login -n $ACR_USERNAME
     
-    - name: Build the Docker image
-      run: |
-           docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}} -t  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
+#     - name: Build the Docker image
+#       run: |
+#            docker build . -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }} -t ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}} -t  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
       
-    - name: Push the Docker image
-      run: | 
-         docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
-         docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
-         docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }}
-      #run: docker push -a ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }}:${{ github.sha }}
+#     - name: Push the Docker image
+#       run: | 
+#          docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:latest
+#          docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{env.IMAGE_TAG}}
+#          docker push  ${{ env.ACR_USERNAME }}.azurecr.io/${{ env.REPO }}:${{ github.sha }}
+#       #run: docker push -a ${{ env.ACR_USERNAME }}.azurecr.us/${{ env.REPO }}:${{ github.sha }}
 
-  deploy:
-     name: "Deploy Document-Conversion Container App"
-     runs-on: ubuntu-latest
-     needs: build
-     steps:
+#   deploy:
+#      name: "Deploy Document-Conversion Container App"
+#      runs-on: ubuntu-latest
+#      needs: build
+#      steps:
                   
-        - uses: actions/checkout@v4
+#         - uses: actions/checkout@v4
                   
-        # - name: Update containerapp.yaml
-        #   run : |
-        #     sed -i "s/pswd/${{ secrets.ACR_PASSWORD }}/g" containerapp.yaml
-        #     #cat containerapp.yaml
-        #   working-directory: ContainerApp
+#         # - name: Update containerapp.yaml
+#         #   run : |
+#         #     sed -i "s/pswd/${{ secrets.ACR_PASSWORD }}/g" containerapp.yaml
+#         #     #cat containerapp.yaml
+#         #   working-directory: ContainerApp
             
-        - name: ACR Login
-          run: |
-            az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
-            az account set -s $ARM_SUBSCRIPTION_ID
-            az acr login -n $ACR_USERNAME
+#         - name: ACR Login
+#           run: |
+#             az login --service-principal -u $ARM_CLIENT_ID -p $ARM_CLIENT_SECRET --tenant $ARM_TENANT_ID
+#             az account set -s $ARM_SUBSCRIPTION_ID
+#             az acr login -n $ACR_USERNAME
             
-        # - name: Build and Deploy Container App
-        #   uses: azure/container-apps-deploy-action@v1
-        #   with:
-        #   #    appSourcePath: ${{ github.workspace }}
-        #       dockerfilePath: ${{ env.ACR_USERNAME }}.azurecr.us"/${{ env.REPO }}:latest \
-        #       resourceGroup: EIS-DEVTEST-INT-EAST-SANDBOX-RG  
-        #       containerAppName: doc-convert-containerapp
-        #       registryUrl: ${{ env.ACR_USERNAME }}.azurecr.us
-        #       registryUsername: ${{ env.ACR_USERNAME }}
-        #       registryPassword: ${{ secrets.ACR_PASSWORD }}
-        #       yamlConfigPath: ./ContainerApp/containerapp.yaml  
-        - name: Deploy to Azure Container Apps
-          run: |
-            az containerapp update \
-              --name doc-convert-containerapp \
-              --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG   \
-              --image "${{ env.ACR_USERNAME }}.azurecr.io"/${{ env.REPO }}:latest \
-         #     --yaml containerapp.yaml
-        #   working-directory: ContainerApp  
+#         # - name: Build and Deploy Container App
+#         #   uses: azure/container-apps-deploy-action@v1
+#         #   with:
+#         #   #    appSourcePath: ${{ github.workspace }}
+#         #       dockerfilePath: ${{ env.ACR_USERNAME }}.azurecr.us"/${{ env.REPO }}:latest \
+#         #       resourceGroup: EIS-DEVTEST-INT-EAST-SANDBOX-RG  
+#         #       containerAppName: doc-convert-containerapp
+#         #       registryUrl: ${{ env.ACR_USERNAME }}.azurecr.us
+#         #       registryUsername: ${{ env.ACR_USERNAME }}
+#         #       registryPassword: ${{ secrets.ACR_PASSWORD }}
+#         #       yamlConfigPath: ./ContainerApp/containerapp.yaml  
+#         - name: Deploy to Azure Container Apps
+#           run: |
+#             az containerapp update \
+#               --name doc-convert-containerapp \
+#               --resource-group EIS_DEVTEST-INT-EAST-SANDBOX-RG   \
+#               --image "${{ env.ACR_USERNAME }}.azurecr.io"/${{ env.REPO }}:latest \
+#          #     --yaml containerapp.yaml
+#         #   working-directory: ContainerApp  
 
  
